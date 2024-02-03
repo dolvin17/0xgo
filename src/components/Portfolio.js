@@ -50,11 +50,11 @@ function Portfolio() {
 		<span className='text-white/50 sm:w-[50px] font-thin'>Donated </span>
 	  </div>
 	<Organizations />
-	<div className='flex flex-row items-center justify-center gap-16 px-2 py-4 mx-1 mb-2 border-b-2 border-white/40'>
-	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 text-white rounded-lg bg-0xgo-dark/70 hover:bg-0xgo-dark">
+	<div className='grid flex-row items-center justify-center grid-cols-2 gap-4 px-2 py-4 mx-1 mb-2 border-b-2 border-white/40'>
+	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 font-thin text-white rounded-lg sm:text-md bg-0xgo-dark/70 hover:bg-0xgo-dark">
 		Restake Rewards
 	</button>
-	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue">
+	<button className="items-center w-full py-2 pl-4 pr-2 my-4 font-thin text-black rounded-lg whitespace-nowrap sm:text-md bg-0xgo-blue/90 hover:bg-0xgo-blue">
 		Claim Rewards $73
 	</button>
     </div>

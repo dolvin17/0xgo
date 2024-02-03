@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Footer() {
 	return (
@@ -26,7 +27,7 @@ export default function Footer() {
 		</div>
 		<div className="flex flex-row items-center justify-center gap-3 mx-16 mb-8">
 		<button className="flex items-center gap-4 text-xs leading-tight text-white/40"> CharmVerse</button>
-		<button className="flex items-center gap-4 text-xs leading-tight text-white/40"> Twitter</button>
+		<Link href="https://twitter.com/0xgo_fund" target="_blank" className="flex items-center gap-4 text-xs leading-tight text-white/40"> Twitter</Link>
 		<button className="flex items-center gap-4 text-xs leading-tight text-white/40"> Telegram</button>
 		</div>
 

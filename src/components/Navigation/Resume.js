@@ -1,4 +1,7 @@
+'use client';
+import Spline from '@splinetool/react-spline';
 import Image from "next/image";
+
 
 export default function Resume() {
 	  return (

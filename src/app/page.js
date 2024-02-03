@@ -1,3 +1,4 @@
+'use client';
 import Staking from "@/components/Staking";
 import { Chart } from "chart.js";
 import Navigation from "@/components/Navigation/Navigation";
@@ -6,7 +7,6 @@ import Resume from "@/components/Navigation/Resume";
 import Caring from "@/components/Caring";
 import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Navigation/Footer";
-
 
 export default function Home() {
   return (
@@ -17,7 +17,6 @@ export default function Home() {
 	  <Portfolio />
 	  <Caring />
 	  <Footer />
-
     </>
   );
 }
