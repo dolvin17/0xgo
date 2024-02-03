@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Staking() {
   return (
-    <div className="w-full max-w-xl p-6 mx-auto border-opacity-50 bg-0xgo-dark rounded-2xl shadow-black/30">
+    <div className="max-w-xl p-6 mx-1 border-opacity-50 sm:mx-auto bg-0xgo-dark rounded-2xl shadow-black/30">
       <div className="flex flex-row items-center gap-6 mb-4 text-white">
-        <button className="text-lg font-bold text-white">STAKE</button>
-        <button className="text-lg font-semibold text-white">UNSTAKE</button>
+        <button className="font-bold text-white ">STAKE</button>
+        <button className="font-semibold text-white ">UNSTAKE</button>
         <div className="flex-grow"></div>
-        <dt>Wallet Balance: 0</dt>
+        <dt className="font-thin">Wallet Balance: 0</dt>
       </div>
-      <label className="flex items-center pl-4 pr-2 rounded-lg bg-white/10">
+      <label className="flex items-center pl-4 pr-2 border-2 rounded-lg border-white/30 bg-white/10">
         <input
           className="flex-grow w-full py-4 font-light bg-transparent outline-none text-white/30 rounded-xl"
           placeholder="123 CTSI"
@@ -28,7 +28,7 @@ export default function Staking() {
           <Image src="/mingcute.svg" alt="arrow-right" width={24} height={24} />
         </button>
       </label>
-      <button className="items-center flex-grow w-full py-4 pl-4 pr-2 my-4 text-xl font-bold text-black rounded-lg bg-0xgo-blue">
+      <button className="items-center flex-grow w-full py-4 pl-4 pr-2 my-4 text-xl font-bold text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue">
         Stake CTSI
       </button>
 	  {/*}
