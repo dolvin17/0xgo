@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Resume() {
 	  return (
-	<div className="flex items-center justify-center gap-8 my-16 sm:text-xl">
+	<div className="flex items-center justify-center gap-8 my-16 mt-32 sm:text-xl">
 		<div className="flex flex-col items-center">
 		<span className="font-bold">10,000 CTSI</span>
 		<span className="font-thin">Total Staked</span>
