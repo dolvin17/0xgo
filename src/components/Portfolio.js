@@ -14,6 +14,7 @@ function Portfolio() {
         label: 'HD SPAIN',
         data: [65],
 		backgroundColor: '#00E834',
+		
       },
       {
         label: 'Sochi',
@@ -37,23 +38,23 @@ function Portfolio() {
 	  <p className="px-5 mt-4 text-xs text-slate-800 text-white/40">*Hover to see your investment</p>
       </div>
       {/* Chart built with Chart.js 3 */}
-      <div className="grow">
+      <div className="mx-auto grow">
         {/* Change the height attribute to adjust the chart height */}
         <LineChart02 data={chartData} width={595} height={42} />
       </div>
-	  <div className='flex items-center justify-center gap-10 pt-4 mx-auto overflow-hidden'>
-		<span className='text-white/50'>Organization </span>
-		<span className='text-white/50'>Alloc. </span>
-		<span className='text-white/50'>Your Deposit </span>
-		<span className='text-white/50'>Total Earned </span>
-		<span className='text-white/50'>Donated </span>
+	  <div className='flex items-center justify-between gap-10 pt-4 mx-2 w-fit'>
+		<span className='text-white/50 sm:w-[120px] font-thin'>Organization </span>
+		<span className='text-white/50 sm:w-[65px] font-thin'>Alloc. </span>
+		<span className='text-white/50 w-[40px] sm:w-[65px] font-thin'>Your Deposit </span>
+		<span className='text-white/50 w-[30px] sm:w-[80px] font-thin'>Total Earned </span>
+		<span className='text-white/50 sm:w-[50px] font-thin'>Donated </span>
 	  </div>
 	<Organizations />
-	<div className='flex flex-row items-center justify-center gap-16 py-4 mb-2 border-b-2 border-white/40'>
-	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 text-white rounded-lg bg-0xgo-dark">
+	<div className='flex flex-row items-center justify-center gap-16 px-2 py-4 mx-1 mb-2 border-b-2 border-white/40'>
+	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 text-white rounded-lg bg-0xgo-dark/70 hover:bg-0xgo-dark">
 		Restake Rewards
 	</button>
-	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 text-black rounded-lg bg-0xgo-blue">
+	<button className="items-center flex-grow w-full py-2 pl-4 pr-2 my-4 text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue">
 		Claim Rewards $73
 	</button>
     </div>
