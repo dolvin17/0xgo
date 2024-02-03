@@ -2,7 +2,7 @@ import "./globals.css";
 import { Web3Modal } from "@/context/Web3Modal";
 
 export const metadata = {
-  title: "Oxgo",
+  title: "0xgo",
   description: "A Cartesi Project",
 };
 
