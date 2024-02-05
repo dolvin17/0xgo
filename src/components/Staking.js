@@ -1,5 +1,7 @@
 import Chartsito from "./Chartsito";
+import Balance from "./Balance";
 import Image from "next/image";
+
 
 export default function Staking() {
   return (
@@ -8,7 +10,7 @@ export default function Staking() {
         <button className="font-bold text-white ">STAKE</button>
         <button className="font-semibold text-white ">UNSTAKE</button>
         <div className="flex-grow"></div>
-        <dt className="font-thin">Wallet Balance: 0</dt>
+		<Balance />
       </div>
       <label className="flex items-center pl-4 pr-2 border-2 rounded-lg border-white/30 bg-white/10">
         <input

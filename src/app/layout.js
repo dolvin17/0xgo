@@ -7,10 +7,23 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { mainnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import {
+    useAccount,
+    useConnect,
+    useDisconnect,
+    usePrepareContractWrite,
+    useContractWrite,
+    useWaitForTransaction,
+    useBalance,
+    chain,
+    allChains,
+    defaultChains,
+} from "wagmi";
+import { injected } from "wagmi/connectors";
 
 const { chains, publicClient } = configureChains(
   [mainnet],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
@@ -37,3 +50,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
