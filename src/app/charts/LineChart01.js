@@ -22,28 +22,30 @@ function LineChart01({
 		data: {
 		  labels: ['0', '3', '6', '9', '12'],
 		  datasets: [{
-			label: 'months',
 			data: [0, 1, 2, 3, 4, 5],
-			borderWidth: 1,
+			borderWidth: 3,
+			borderColor: '#02F6FF',
 			pointHoverRadius: 5,
+			backgroundColor: '#02F6FF15',
+			pointBackgroundColor: '#02F6FF',
+			
+
 			fill: true,
 			tension: 0.4,
 		  }]
 		},
 		options: {
+			plugins: {
+				legend: {
+				  display: false,
+				},
 		  scales: {
 			y: {
 			  beginAtZero: false,
 			}
 		  }
 		},
-		ticks: {
-			// Include a dollar sign in the ticks
-			callback: function(value, index, ticks) {
-				return '$' + value;
-			}
-		}
-
+	}
 	  });
     setChart(newChart);
     return () => newChart.destroy();

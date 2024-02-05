@@ -1,7 +1,7 @@
 import Chartsito from "./Chartsito";
 import Balance from "./Balance";
 import Image from "next/image";
-
+import Stake from "./Stake";
 
 export default function Staking() {
   return (
@@ -10,7 +10,7 @@ export default function Staking() {
         <button className="font-bold text-white ">STAKE</button>
         <button className="font-semibold text-white ">UNSTAKE</button>
         <div className="flex-grow"></div>
-		<Balance />
+        <Balance />
       </div>
       <label className="flex items-center pl-4 pr-2 border-2 rounded-lg border-white/30 bg-white/10">
         <input
@@ -30,10 +30,7 @@ export default function Staking() {
           <Image src="/mingcute.svg" alt="arrow-right" width={24} height={24} />
         </button>
       </label>
-      <button className="items-center flex-grow w-full py-4 pl-4 pr-2 my-4 text-xl font-bold text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue">
-        Stake CTSI
-      </button>
-	  {/*}
+        <Stake />
       <div className="my-4 text-base font-semibold sm:text-lg">
         <span className="py-2 text-white">
           Estimated returns for statking 1 CTSI{" "}
@@ -42,7 +39,7 @@ export default function Staking() {
       </div>
       <div className="flex items-center flex-grow w-full max-w-xl gap-4">
         <Chartsito />
-  </div>*/}
+  </div>
     </div>
   );
 }
