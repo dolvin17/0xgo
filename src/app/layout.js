@@ -1,18 +1,39 @@
-import "./globals.css";
-import { Web3Modal } from "@/context/Web3Modal";
+"use client";
 
-export const metadata = {
-  title: "0xgo",
-  description: "A Cartesi Project",
-};
+import "./globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import { mainnet } from "wagmi/chains";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { publicProvider } from "wagmi/providers/public";
+
+const { chains, publicClient } = configureChains(
+  [mainnet],
+  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+);
+
+const { connectors } = getDefaultWallets({
+  appName: "0xGO",
+  projectId: "449f2fcb77536fe10ddf235f81039e79",
+  chains,
+});
+
+const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors,
+  publicClient,
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-	<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-		<body>
-		<Web3Modal>{children}</Web3Modal>
-		</body>
+      <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+      <body>
+        <WagmiConfig config={wagmiConfig}>
+          <RainbowKitProvider modalSize="compact" chains={chains} >{children}</RainbowKitProvider>
+        </WagmiConfig>
+      </body>
     </html>
   );
 }

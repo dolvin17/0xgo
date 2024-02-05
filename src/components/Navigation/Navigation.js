@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 export default function Navigation() {
   return (
 	<div className="fixed top-0 flex flex-row items-center bg-opacity-50 justify-between w-full px-6 bg-0xgo-dark h-[60px] ">
@@ -9,7 +11,7 @@ export default function Navigation() {
 	  </div>
 	  <div className="flex items-center gap-4">
 		<div className="flex-grow"></div>
-		<w3m-button />
+		<ConnectButton  />
 	  </div>
 	</div>
   );
