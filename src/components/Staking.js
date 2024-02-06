@@ -33,7 +33,7 @@ export default function Staking() {
         <Stake />
       <div className="my-4 text-base font-semibold sm:text-lg">
         <span className="py-2 text-white">
-          Estimated returns for statking 1 CTSI{" "}
+          Estimated returns for statking 100 CTSI{" "}
         </span>
         <span className="ml-1 text-gray-500">(CTSI / month)</span>
       </div>
