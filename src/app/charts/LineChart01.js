@@ -20,16 +20,14 @@ function LineChart01({
     const newChart =  new Chart(ctx, {
 		type: 'line',
 		data: {
-		  labels: ['0', '3', '6', '9', '12'],
+		  labels: ['100 CTSI', '115 CTSI', '130 CTSI', '155 CTSI', '185 CTSI'],
 		  datasets: [{
-			data: [0, 1, 2, 3, 4, 5],
+			data: [0, 3, 5, 8, 12],
 			borderWidth: 3,
 			borderColor: '#02F6FF',
 			pointHoverRadius: 5,
 			backgroundColor: '#02F6FF15',
 			pointBackgroundColor: '#02F6FF',
-			
-
 			fill: true,
 			tension: 0.4,
 		  }]
@@ -41,7 +39,7 @@ function LineChart01({
 				},
 		  scales: {
 			y: {
-			  beginAtZero: false,
+			  beginAtZero: true,
 			}
 		  }
 		},
