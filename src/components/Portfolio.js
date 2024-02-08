@@ -31,7 +31,7 @@ function Portfolio() {
   };
 
   return (
-    <div  className="w-full max-w-xl mx-auto bg-black border-opacity-50 rounded-2xl shadow-black/30">
+    <div  className="w-full max-w-xl mx-auto mt-8 bg-black border-opacity-50 rounded-2xl shadow-black/30">
       <div className="flex flex-row items-center px-5 pt-4 border-slate-100 dark:border-slate-700">
         <h2 className="mt-4 font-semibold text-slate-800 dark:text-slate-100">PORTFOLIO</h2>
 		<div className='flex flex-grow'></div>
