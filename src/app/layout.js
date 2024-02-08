@@ -4,7 +4,7 @@ import "./globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { mainnet } from "wagmi/chains";
+import { goerli, mainnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import {
@@ -22,7 +22,7 @@ import {
 import { injected } from "wagmi/connectors";
 
 const { chains, publicClient } = configureChains(
-  [mainnet],
+  [goerli],
   [publicProvider()]
 );
 

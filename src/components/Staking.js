@@ -1,7 +1,7 @@
 import Chartsito from "./Chartsito";
 import Balance from "./Balance";
-import Image from "next/image";
 import Stake from "./Stake";
+import Aprove from "./Aprove";
 
 export default function Staking() {
   return (
@@ -12,24 +12,7 @@ export default function Staking() {
         <div className="flex-grow"></div>
         <Balance />
       </div>
-      <label className="flex items-center pl-4 pr-2 border-2 rounded-lg border-white/30 bg-white/10">
-        <input
-          className="flex-grow w-full py-4 font-light bg-transparent outline-none text-white/30 rounded-xl"
-          placeholder="123 CTSI"
-          inputMode="decimal"
-          autoComplete="off"
-          autoCorrect="off"
-          spellCheck="false"
-          type="text"
-          minLength="1"
-          maxLength="9"
-        />
-        <button className="flex flex-row justify-center gap-2 px-5 py-1 font-semibold text-white rounded-lg bg-white/25">
-          <Image src="/ctsi.svg" alt="arrow-right" width={24} height={24} />
-          CTSI
-          <Image src="/mingcute.svg" alt="arrow-right" width={24} height={24} />
-        </button>
-      </label>
+     <Aprove />
         <Stake />
       <div className="my-4 text-base font-semibold sm:text-lg">
         <span className="py-2 text-white">
