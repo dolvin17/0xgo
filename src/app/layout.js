@@ -7,20 +7,7 @@ import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { goerli, mainnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import {
-    useAccount,
-    useConnect,
-    useDisconnect,
-    usePrepareContractWrite,
-    useContractWrite,
-    useWaitForTransaction,
-    useBalance,
-    chain,
-    allChains,
-    defaultChains,
-} from "wagmi";
-import { injected } from "wagmi/connectors";
-
+import { Analytics } from '@vercel/analytics/react';
 const { chains, publicClient } = configureChains(
   [goerli],
   [publicProvider()]
@@ -44,6 +31,7 @@ export default function RootLayout({ children }) {
       <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
       <body>
         <WagmiConfig config={wagmiConfig}>
+			<Analytics />
           <RainbowKitProvider modalSize="compact" chains={chains} >{children}</RainbowKitProvider>
         </WagmiConfig>
       </body>
