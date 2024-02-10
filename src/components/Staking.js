@@ -1,7 +1,6 @@
 import Chartsito from "./Chartsito";
 import Balance from "./Balance";
 import Stake from "./Stake";
-import Aprove from "./Aprove";
 
 export default function Staking() {
   return (
@@ -12,7 +11,6 @@ export default function Staking() {
         <div className="flex-grow"></div>
         <Balance />
       </div>
-     <Aprove />
         <Stake />
       <div className="my-4 text-base font-semibold sm:text-lg">
         <span className="py-2 text-white">
