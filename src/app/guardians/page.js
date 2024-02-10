@@ -55,7 +55,7 @@ export default function Stake() {
   return (
     <>
       <Navigation />
-      <div className="flex flex-col items-center py-16 mx-8 mt-32 rounded-lg sm:px-16 w-fill bg-white/10">
+      <div className="flex flex-col items-center py-16 mx-auto mt-32 rounded-lg sm:mx-[200px] sm:px-16 w-fill bg-white/10">
         <div className="flex flex-col">
           <h1 className="text-4xl font-bold text-center text-white">
             Cartesi Guardians
@@ -145,7 +145,7 @@ export default function Stake() {
             </button>
           </div>
           <div
-            className={`w-full p-8 rounded-lg ${
+            className={`w-full p-8 rounded-lg bg-white/50 ${
               selectedBackground &&
               selectedBody &&
               selectedEyes &&
