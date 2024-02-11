@@ -7,15 +7,13 @@ import Resume from "@/components/Navigation/Resume";
 import Caring from "@/components/Caring";
 import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Navigation/Footer";
+import Stage from "@/components/Stage";
 
 export default function Home() {
   return (
     <>
 	  <Navigation />
-	  <Resume />
-	  <Staking />
-	  <Portfolio />
-	  <Caring />
+	 <Stage />
 	  <Footer />
     </>
   );
