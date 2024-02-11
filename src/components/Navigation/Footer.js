@@ -60,6 +60,22 @@ export default function Footer() {
           {" "}
           Telegram
         </Link>
+		<Link
+          target="a_blank"
+          href="https://discord.gg/Gu2CzpmXjd"
+          className="flex items-center gap-4 text-xs leading-tight text-white/40"
+        >
+          {" "}
+          Discord
+        </Link>
+		<Link
+          target="a_blank"
+          href="https://zealy.io/cw/0xgo/leaderboard"
+          className="flex items-center gap-4 text-xs leading-tight text-white/40"
+        >
+          {" "}
+          Zealy
+        </Link>
       </div>
     </>
   );
