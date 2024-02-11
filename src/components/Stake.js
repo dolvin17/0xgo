@@ -48,7 +48,7 @@ export default function ApproveStake() {
     args: ["0x3c0e20fCA6d2E084127D056377a5f35294503447", parsedAmount],
   });
 
-  function stake() {
+  function staker() {
     if (address) {
       if (config) {
         writeApprove?.();
@@ -87,7 +87,7 @@ export default function ApproveStake() {
       </label>
       <button
         suppressHydrationWarning
-        onClick={() => stake()}
+        onClick={() => staker()}
         className="items-center flex-grow w-full py-4 pl-4 pr-2 my-4 text-xl font-bold text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue"
       >
         <div>Stake</div>

@@ -1,4 +1,5 @@
-const { useAccount, useNetwork, useBalance } = require("wagmi");
+'use client';
+import { useAccount, useNetwork, useBalance } from "wagmi";
 
 export default function Balance() {
   const { address } = useAccount();

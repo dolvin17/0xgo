@@ -11,11 +11,23 @@ export default function Navigation() {
         </a>
       </div>
       <div className="flex items-center gap-4">
+	  <div className="flex-grow">
+          <Link
+            href="/stake"
+            className="p-2 border-2 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
+          >
+            Stake{" "}
+          </Link>
+        </div>
         <div className="flex-grow">
-          <Link href="/guardians" className="p-2 border-2 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl">
+          <Link
+            href="/guardians"
+            className="p-2 border-2 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
+          >
             Cartesi Guardians{" "}
           </Link>
         </div>
+		
         <ConnectButton />
       </div>
     </div>
