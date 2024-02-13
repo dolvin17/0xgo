@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation/Navigation";
 import cn from "clsx";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
+import Image from "next/image";
 
 const background = ["background1.png", "background2.png", "background3.png"];
 const body = ["body1.png", "body2.png", "body3.png"];
@@ -72,7 +73,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Background</h3>
               <div className="flex flex-row">
                 {background.map((bg) => (
-                  <img
+                  <Image
                     src={bg}
                     key={bg}
                     onClick={() => setBackground(bg)}
@@ -87,7 +88,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Body</h3>
               <div className="flex flex-row">
                 {body.map((bd) => (
-                  <img
+                  <Image
                     src={bd}
                     key={bd}
                     onClick={() => setBody(bd)}
@@ -102,7 +103,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Eyes</h3>
               <div className="flex flex-row">
                 {eyes.map((eye) => (
-                  <img
+                  <Image
                     src={eye}
                     key={eye}
                     onClick={() => setEyes(eye)}
@@ -117,7 +118,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Mouth</h3>
               <div className="flex flex-row">
                 {mouth.map((mt) => (
-                  <img
+                  <Image
                     src={mt}
                     key={mt}
                     onClick={() => setMouth(mt)}
