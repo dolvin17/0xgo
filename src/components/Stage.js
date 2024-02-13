@@ -8,9 +8,9 @@ export default function Stage() {
         <div className="px-24 mt-8 font-bold text-center text-7xl sm:text-5xl shadow-color-black text-0xgo-blue animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
           Staking 4 Good
         </div>
-        <div className="max-w-lg mt-4 antialiased tracking-widest text-center shadow-color-black sm:text-2xl text-white/50 animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
-		 HELP AND EARN
-          <p className="p-2 mt-4 text-white text-md animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
+        <div className="max-w-lg mt-4 antialiased italic tracking-widest text-center shadow-color-black sm:text-2xl text-white/50 animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
+		 <p className="text-xl font-thin"> Sharing is giving from what one has, not from what one has left over </p>
+          <p className="p-2 mt-4 not-italic text-white text-md animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
             Staking protocol by running validators and
             operating nodes to earn passive rewards, and staking incentives.
             These rewards goes towards communities
@@ -19,7 +19,7 @@ export default function Stage() {
             <Link
               href="https://explorer.cartesi.io/stake/0xf22dbcf128c394b067f484fe78586fef86846834"
               target="_blank"
-              className="p-2 border-2 shadow-lg shadow-cyan-500/50 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out hover:bg-cyan-700"
+              className="p-2 not-italic border-2 shadow-lg shadow-cyan-500/50 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out hover:bg-cyan-700"
             >
               Active Pools
             </Link>
