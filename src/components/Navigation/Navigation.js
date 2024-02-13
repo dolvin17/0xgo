@@ -1,17 +1,16 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { Fragment, useState } from "react";
+import { TiThMenuOutline } from "react-icons/ti";
 
 export default function Navigation() {
-  return (
-    <div className="fixed top-0 flex flex-row items-center bg-opacity-50 justify-between w-full px-6 bg-0xgo-dark h-[60px] ">
-      <div className="flex items-center gap-4">
-        <a className="flex-shrink-0 max-w-[5rem]" href="/">
-          <Image src="/logo.svg" alt="0xGO" width={42} height={42} />
-        </a>
-      </div>
-      <div className="flex items-center gap-4">
-	  <div className="flex-grow">
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const LINKS = [
+    <Fragment key="links">
+      <div className="flex items-center justify-center gap-4">
+        <div className="flex-grow">
           <Link
             href="/stake"
             className="p-2 border-2 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
@@ -27,9 +26,32 @@ export default function Navigation() {
             Cartesi Guardians{" "}
           </Link>
         </div>
-		
         <ConnectButton />
       </div>
-    </div>
+    </Fragment>,
+  ];
+  return (
+    <section className="fixed w-full items-center flex flex-col lg:flex-row justify-center  z-[1] ">
+      <div className="!z-50  w-full items-center justify-between drop-shadow-lg backdrop-blur-lg  h-[60px] bg-0xgo-dark px-8 flex lg:max-w-full">
+        <Link className="flex-shrink-0 max-w-[5rem]" href="/">
+          <Image src="/logo.svg" alt="0xGO" width={42} height={42} />
+        </Link>
+		<div className="items-center justify-end hidden lg:flex">{LINKS}</div>
+		<button 
+			type="button"
+			className="lg:hidden"
+			onClick={() => setIsMenuOpen(!isMenuOpen)}
+		>
+			<TiThMenuOutline className="text-xl text-white fill-current" />
+		</button>
+      </div>
+	  <section
+        className={`flex-col p-2 bg-white  rounded-xl drop-shadow-lg bg-white/80 backdrop-blur-lg border-white  text-black gap-2 lg:hidden ${
+          isMenuOpen ? "flex" : "hidden"
+        }`}
+      >
+        {LINKS}
+      </section>
+    </section>
   );
 }
