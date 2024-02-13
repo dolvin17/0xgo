@@ -12,90 +12,70 @@ export default function Cards() {
     <>
       <Navigation />
       <div className="flex flex-col items-center justify-center py-8 pt-24 pb-8 overflow-x-hidden text-gray-900 ">
-        <h1 className="pb-8 text-3xl font-bold tracking-widest text-yellow-400">
-          COMMING SOON.. FOR STAKING
+        <h1 className="pb-8 text-6xl font-bold tracking-widest text-yellow-400">
+          CARTESI GUARDIANS
         </h1>
-        <div className="flex flex-row flex-wrap items-center justify-center w-full text-gray-600 bg-white8">
-          <Marquee pauseOnHover gradient={false} speed={20}>
-            <ProductCards
-              name="M8"
-              imageURL="/nft-m8.png"
-              precios="Discord Role"
-            />
-            <ProductCards
-              name="Kitsune"
-              imageURL="/nft-kitsune.png"
-              precios="50 CTSI"
-            />
-            <ProductCards
-              name="Hánuman"
-              imageURL="/nft-hanuman.png"
-              precios="250 CTSI"
-            />
+        <p className="w-1/2 antialiased text-white indent-5">
+          The Cartesi Guardians are a unique collection of 256 NFTs that
+          represent a fusion between mythology, technology and exclusive
+          opportunities for CTSI token stakers. These guardians, inspired by
+          mythological creatures and deities such as{" "}
+          <span className="text-xl font-semibold text-yellow-400">
+            Hanuman, Heimdallr, Kitsune, Simurgh, Phoenix, Caladrius,
+            Quetzalcoatl, Kukulkan, Poseidon and Neptune
+          </span>
+          , have been selected to embody the diversity and nobility within us.
+          They function as token-gated badges, allowing users who participate in
+          staking, to access exclusive benefits. Those who own a Cartesi
+          Guardian will get special discounts, early access to VIP staking pools
+          (USTD, USDC, ETH), lower unstaking fees. The amount of CTSI staked
+          determines earning these guardians, providing an additional incentive
+          to participate in staking and strengthen the community. <br />
+          Show the world how much you care and give to the community!{" "}
+        </p>
+			</div>
+        <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
+          <ProductCards
+            name="Early M8s"
+            imageURL="/nft-m8.png"
+            precios="Discord Role"
+          />
+		  <div className="flex flex-col items-center">
 
-            <ProductCards
-              name="HeimdallR"
-              imageURL="/nft-keimdall.png"
-              precios="500 CTSI"
-            />
-            <ProductCards
-              name="Bastet"
-              imageURL="/nft-bastet.png"
-              precios="800 CTSI"
-            />
-
-            <ProductCards
-              name="DRAKE"
-              imageURL="/nft-drake.png"
-              precios="800 CTSI"
-            />
-            <ProductCards
-              name="SIMURGH"
-              imageURL="/nft-simurgh.png"
-              precios="1000 CTSI"
-            />
-            <ProductCards
-              name="CALADRIUS"
-              imageURL="/nft-caladrius.png"
-              precios="1000 CTSI"
-            />
-            <ProductCards
-              name="PHOENIX"
-              imageURL="/nft-phoenix.png"
-              precios="1000 CTSI"
-            />
-            <ProductCards
-              name="POSEIDON"
-              imageURL="/nft-poseidon.png"
-              precios="1600 CTSI"
-            />
-            <ProductCards
-              name="NEPTUNO"
-              imageURL="/nft-neptuno.png"
-              precios="1600 CTSI"
-            />
-            <ProductCards
-              name="KUKULKAN"
-              imageURL="/nft-kukulkan.png"
-              precios="+ 2000 CTSI"
-            />
-            <ProductCards
-              name="QUETZALCOATL"
-              imageURL="/nft-quetz.png"
-              precios="+ 2000 CTSI"
-            />
-          </Marquee>
-        </div>
+		  
+		  <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400"> Why Unicorns</h1>
+          <p className="px-24 text-white indent-5">
+            In mythology and culture, unicorns have been symbols of nobility and
+            greatness, the concept of a unicorn as a unique and special being
+            persists and, in fact, has evolved to adapt to various modern
+            interpretations. Unicorns continue to be considered extraordinary
+            and magical creatures, and their uniqueness has become a
+            representation of rarity and exclusivity in various contexts. That
+            is why the  Cartesi Early M8s  are represented behind a unicorn,
+            as symbol of exclusivity and nobility, of our first 42 frens on this
+            path that we undertake with great enthusiasm, but that we know will
+            be hard, we need to surround ourselves with exceptional people.
+			<br />
+			<p className="py-4">
+			 <span className="font-semibold text-0xgo-blue"> Cartesi Early M8s</span>, is a NFT collection composed of <span className="font-semibold text-yellow-400">  42 limited editions.</span> This piece,
+            with no price assigned, is designed for the first 42 early members
+            of 0xGO Family. To mint this NFT, join us on our <span className="font-semibold text-purple-500 underline">Discord server</span>, and
+            acquire the corresponding role, Be one of the lucky owners of one of
+            the limited editions of the Cartesi Early Mate.
+			</p>
+            Thank you for considering being part of our family.
+          </p>
       </div>
+	  </div>
       <Footer />
     </>
   );
 }
 function ProductCards({ name, imageURL, precios }) {
   return (
-    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 py-32 shadow-2xl border-2 rounded-2xl  border-black ">
-      <div className="relative w-full h-[16rem] bg-white ">
-        <figure className="w-64 h-64 transition bg-black border-2 border-black rounded-b-none ">
+    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  py-32  ">
+      <div className="relative w-full h-full">
+        <figure className="w-64 h-64 ">
           <Image
             className="object-cover w-full h-full scale-[2]"
             fill
@@ -104,7 +84,7 @@ function ProductCards({ name, imageURL, precios }) {
           />
         </figure>
       </div>
-      <div className="flex flex-col items-center justify-center mt-24 ml-16 lg:flex-row">
+      <div className="flex flex-col items-center justify-center mt-32 ml-16 lg:flex-row">
         <div className="p-3 border-gray-900/10 sm:border-l-transparent ">
           <h3 className="text-xl font-bold text-center text-yellow-400 uppercase">
             {name}
