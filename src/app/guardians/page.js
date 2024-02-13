@@ -10,7 +10,7 @@ export default function Cards() {
   return (
     <>
       <Navigation />
-        <div className="flex flex-col items-center justify-center py-8 pt-24 pb-8 overflow-x-hidden text-gray-900">
+        <div className="flex flex-col items-center justify-center py-8 pt-24 pb-8 text-gray-900">
           <h1 className="pb-8 text-3xl font-bold tracking-widest text-yellow-400">
             COMMING SOON.. FOR STAKING
           </h1>
@@ -118,7 +118,7 @@ export default function Cards() {
 }
 function ProductCards({ name, imageURL, precios }) {
   return (
-    <article className="flex flex-col w-full max-w-[16rem]   transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 py-32 shadow-2xl border-2 rounded-2xl  border-black ">
+    <article className="flex flex-col w-full max-w-[16rem]  overflow-x-hidden transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 py-32 shadow-2xl border-2 rounded-2xl  border-black ">
       <div className="relative w-full h-[16rem] bg-white ">
         <figure className="w-64 h-64 transition bg-black border-2 border-black rounded-b-none ">
           <Image
