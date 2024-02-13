@@ -33,17 +33,18 @@ export default function Cards() {
           to participate in staking and strengthen the community. <br />
           Show the world how much you care and give to the community!{" "}
         </p>
-			</div>
-        <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
-          <ProductCards
-            name="Early M8s"
-            imageURL="/nft-m8.png"
-            precios="Discord Role"
-          />
-		  <div className="flex flex-col items-center">
-
-		  
-		  <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400"> Why Unicorns</h1>
+      </div>
+      <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
+        <ProductCards
+          name="Early M8s"
+          imageURL="/nft-m8.png"
+          precios="Discord Role"
+        />
+        <div className="flex flex-col items-center">
+          <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
+            {" "}
+            WELCOME, EARLY M8s
+          </h1>
           <p className="px-24 text-white indent-5">
             In mythology and culture, unicorns have been symbols of nobility and
             greatness, the concept of a unicorn as a unique and special being
@@ -51,22 +52,78 @@ export default function Cards() {
             interpretations. Unicorns continue to be considered extraordinary
             and magical creatures, and their uniqueness has become a
             representation of rarity and exclusivity in various contexts. That
-            is why the  Cartesi Early M8s  are represented behind a unicorn,
-            as symbol of exclusivity and nobility, of our first 42 frens on this
+            is why the Cartesi Early M8s are represented behind a unicorn, as
+            symbol of exclusivity and nobility, of our first 42 frens on this
             path that we undertake with great enthusiasm, but that we know will
             be hard, we need to surround ourselves with exceptional people.
-			<br />
-			<p className="py-4">
-			 <span className="font-semibold text-0xgo-blue"> Cartesi Early M8s</span>, is a NFT collection composed of <span className="font-semibold text-yellow-400">  42 limited editions.</span> This piece,
-            with no price assigned, is designed for the first 42 early members
-            of 0xGO Family. To mint this NFT, join us on our <span className="font-semibold text-purple-500 underline">Discord server</span>, and
-            acquire the corresponding role, Be one of the lucky owners of one of
-            the limited editions of the Cartesi Early Mate.
-			</p>
+            <br />
+            <p className="py-4">
+              <span className="font-semibold text-0xgo-blue">
+                {" "}
+                Cartesi Early M8s
+              </span>
+              , is a NFT collection composed of{" "}
+              <span className="font-semibold text-yellow-400">
+                {" "}
+                42 limited editions.
+              </span>{" "}
+              This piece, with no price assigned, is designed for the first 42
+              early members of 0xGO Family. To mint this NFT, join us on our{" "}
+              <span className="font-semibold text-purple-500 underline">
+                Discord server
+              </span>
+              , and acquire the corresponding role, Be one of the lucky owners
+              of one of the limited editions of the Cartesi Early Mate.
+            </p>
             Thank you for considering being part of our family.
           </p>
+        </div>
       </div>
-	  </div>
+      <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
+        <ProductCards
+          name="KITSUNE"
+          imageURL="/nft-kitsune.png"
+          precios="50 CTSI"
+        />
+        <div className="flex flex-col items-center">
+          <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
+            {" "}
+            KITSUNE
+          </h1>
+          <p className="px-24 text-white indent-5">
+            The mythical spirits of the nine-tailed foxes are revered for their
+            cunning and intelligence, their shape-shifting abilities, and their
+            connection to the spirit world. They are charming, and it is
+            undeniable that they continue to represent mysticism and wisdom in
+            various interpretations. 
+			<br/> Kitsune hold a special place in folklore as
+            unique and extraordinary creatures. Its ability to transform and
+            navigate between worlds symbolizes adaptability and a deep
+            understanding of the complexities of life. In modern contexts,
+            Kitsune are celebrated not only for their magical qualities but also
+            as icons of intelligence and resilience.
+            <br />
+            <p className="py-4">
+              <span className="font-semibold text-0xgo-blue">
+                {" "}
+                Cartesi Guardians
+              </span>
+              , is a NFT collection composed of{" "}
+              <span className="font-semibold text-yellow-400">
+                {" "}
+                256 limited editions.
+              </span>{" "}
+			  These pieces are not for sale, you will only be able to own a {" "} 
+              <span className="font-semibold text-0xgo-blue"> 
+			  Kitsune Cartesi Guardian 	 {" "} 
+              </span>
+			  after staking<span className="font-semibold text-yellow-400"> 50 CTSI</span> tokens,
+			  on one of the available pools.
+            </p>
+          </p>
+        </div>
+      </div>
+
       <Footer />
     </>
   );
@@ -86,7 +143,7 @@ function ProductCards({ name, imageURL, precios }) {
       </div>
       <div className="flex flex-col items-center justify-center mt-32 ml-16 lg:flex-row">
         <div className="p-3 border-gray-900/10 sm:border-l-transparent ">
-          <h3 className="text-xl font-bold text-center text-yellow-400 uppercase">
+          <h3 className="text-xl font-bold text-center tracking-[.25em] antialiased text-yellow-400 uppercase">
             {name}
           </h3>
           <p className="flex flex-row gap-1 px-4 font-thin text-white ">
