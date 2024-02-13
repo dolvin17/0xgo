@@ -7,16 +7,18 @@ import { GiBreakingChain, GiMagnifyingGlass } from "react-icons/gi";
 import Footer from "@/components/Navigation/Footer";
 import Marquee from "react-fast-marquee";
 
-export default function Cards() {
+export default function Carrusel() {
   return (
     <>
-      <Navigation />
-      <div className="flex flex-col items-center justify-center py-8 pt-24 pb-8 overflow-x-hidden text-gray-900 ">
-        <h1 className="pb-8 text-3xl font-bold tracking-widest text-yellow-400">
-          COMMING SOON.. FOR STAKING
+      <div className="flex flex-col items-center justify-center py-8 overflow-x-hidden text-gray-900 ">
+        <h1 className="text-3xl antialiased font-black text-yellow-400 tracking-[.25em] ">
+		EARN YOU BADGE
         </h1>
-        <div className="flex flex-row flex-wrap items-center justify-center w-full text-gray-600 bg-white8">
-          <Marquee pauseOnHover gradient={false} speed={20}>
+		<Link href="/guardians" className="pb-4 italic underline hover:text-cyan-400 text-0xgo-blue/50 ">
+		Learn more
+		</Link>
+        <div className="z-0 flex flex-row flex-wrap items-center justify-center w-full overflow-hidden text-gray-600 bg-white8">
+          <Marquee className="overflow-hidden" pauseOnHover gradient={false} speed={50}>
             <ProductCards
               name="M8"
               imageURL="/nft-m8.png"
@@ -87,13 +89,12 @@ export default function Cards() {
           </Marquee>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
 function ProductCards({ name, imageURL, precios }) {
   return (
-    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 py-32 shadow-2xl border-2 rounded-2xl  border-black ">
+    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 pt-32 shadow-2xl border-2 rounded-2xl  border-black ">
       <div className="relative w-full h-[16rem] bg-white ">
         <figure className="w-64 h-64 transition bg-black border-2 border-black rounded-b-none ">
           <Image
@@ -106,7 +107,7 @@ function ProductCards({ name, imageURL, precios }) {
       </div>
       <div className="flex flex-col items-center justify-center mt-24 ml-16 lg:flex-row">
         <div className="p-3 border-gray-900/10 sm:border-l-transparent ">
-          <h3 className="text-xl font-bold text-center text-yellow-400 uppercase">
+          <h3 className="text-xl font-bold tracking-[.25em] antialiased text-center text-yellow-400 uppercase">
             {name}
           </h3>
           <p className="flex flex-row gap-1 px-4 font-thin text-white ">

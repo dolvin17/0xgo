@@ -10,12 +10,14 @@ import Stage from "@/components/Stage";
 import SecondState from "@/components/SecondState";
 import ThirdState from "@/components/ThirdState";
 import FourthState from "@/components/FourthState";
+import Carrusel from "../components/Carrusel";
 
 export default function Home() {
   return (
     <>
 	  <Navigation />
 	 <Stage />
+	 <Carrusel />
 	 <SecondState />
 	 <ThirdState />
 	 <FourthState />

@@ -73,7 +73,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Background</h3>
               <div className="flex flex-row">
                 {background.map((bg) => (
-                  <Image
+                  <img
                     src={bg}
                     key={bg}
                     onClick={() => setBackground(bg)}
@@ -88,7 +88,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Body</h3>
               <div className="flex flex-row">
                 {body.map((bd) => (
-                  <Image
+                  <img
                     src={bd}
                     key={bd}
                     onClick={() => setBody(bd)}
@@ -103,7 +103,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Eyes</h3>
               <div className="flex flex-row">
                 {eyes.map((eye) => (
-                  <Image
+                  <img
                     src={eye}
                     key={eye}
                     onClick={() => setEyes(eye)}
@@ -118,7 +118,7 @@ export default function Stake() {
               <h3 className="w-[100px] font-thin">Mouth</h3>
               <div className="flex flex-row">
                 {mouth.map((mt) => (
-                  <Image
+                  <img
                     src={mt}
                     key={mt}
                     onClick={() => setMouth(mt)}
