@@ -55,12 +55,12 @@ export default function Stake() {
   return (
     <>
       <Navigation />
-      <div className="flex flex-col items-center py-16 mx-auto mt-32 rounded-lg sm:mx-[200px] sm:px-16 w-fill bg-white/10">
+      <div className="flex flex-col items-center pt-24 mx-auto   rounded-lg sm:mx-[200px] sm:px-16 w-fill bg-white/10">
         <div className="flex flex-col">
           <h1 className="text-4xl font-bold text-center text-white">
             Cartesi Guardians
           </h1>
-          <span className="py-8 mx-1 font-thin text-white/50">
+          <span className="p-2 py-8 font-thin text-center text-white/50">
             {" "}
             Allows you to get lower staking fees and increase the amount of
             rewards earned + VIP feature access

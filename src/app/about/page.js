@@ -8,12 +8,12 @@ export default function AboutUs() {
   return (
     <>
       <Navigation />
-      <div className="flex flex-col items-center justify-center mt-24">
+      <div className="flex flex-col items-center justify-center py-24">
         <h1 className="text-3xl font-bold">Meet the 0xGO Team</h1>
         <p className="pb-8 mt-4 text-xl text-center border-b-2 text-white/25">
           We are a team of developers building the future of finance.
         </p>
-        <div className="flex flex-row items-center justify-center gap-16 mt-16">
+        <div className="flex flex-row items-center justify-center gap-16 p-2 mt-16">
           <Karol />
           <Denny />
         </div>
