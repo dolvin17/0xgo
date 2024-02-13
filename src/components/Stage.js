@@ -15,7 +15,7 @@ export default function Stage() {
             operating nodes to earn passive rewards, and staking incentives.
             These rewards goes towards communities
           </p>
-          <form className="flex items-center justify-center my-16 sm:my-24">
+          <form className="flex items-center justify-center gap-4 my-16 sm:my-24">
             <Link
               href="https://explorer.cartesi.io/stake/0xf22dbcf128c394b067f484fe78586fef86846834"
               target="_blank"
@@ -23,7 +23,15 @@ export default function Stage() {
             >
               Active Pools
             </Link>
+			<Link
+              href="/guardians"
+              target="_blank"
+              className="p-2 not-italic border-2 shadow-lg shadow-cyan-500/50 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out hover:bg-cyan-700"
+            >
+              CTSI Guardians
+            </Link>
           </form>
+		  
         </div>
       </div>
       <div className="static flex flex-col items-center justify-center p-4">

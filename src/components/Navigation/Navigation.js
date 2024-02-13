@@ -20,10 +20,10 @@ export default function Navigation() {
         </div>
         <div className="flex-grow">
           <Link
-            href="/guardians"
+            href="/mint"
             className="p-2 border-2 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
           >
-            Cartesi Guardians{" "}
+            Mint NFT{" "}
           </Link>
         </div>
         <ConnectButton />
