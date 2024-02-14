@@ -15,38 +15,40 @@ export default function Heimdallr() {
             HEIMDALLR
           </h1>
           <p className="px-24 text-white indent-5">
-            Heimdallr is a legendary figure known for his role protecting the kingdom of the gods.
-			He has supernatural sight and hearing that allow
-            him to observe and hear everything that happens in the nine worlds.
-            He can see to the end of time and hear the grass growing. He stands
-            on the Bifröst, the bridge that connects Asgard to Midgard. His
-            constant vigilance protects Asgard from intrusions and threats. He
-            is also known for his wielding of the Gjallarhorn, the magical horn
-            of which will sound with a deafening roar to announce Ragnarok.
-			<br />
+            Heimdallr is a legendary figure known for his role protecting the
+            kingdom of the gods. He has supernatural sight and hearing that
+            allow him to observe and hear everything that happens in the nine
+            worlds. He can see to the end of time and hear the grass growing. He
+            stands on the Bifröst, the bridge that connects Asgard to Midgard.
+            His constant vigilance protects Asgard from intrusions and threats.
+            He is also known for his wielding of the Gjallarhorn, the magical
+            horn of which will sound with a deafening roar to announce Ragnarok.
+            <br />
             Heimdallr represents light and vigilance. Despite knowing all the
-            secrets of the universe, He is noble and honorable, always
-            acts with integrity. The figure of Heimdallr continues to inspire
-            people today as a symbol of vigilance, protection and fight for
-            worthy causes.
-            </p>
-            <p className="px-24 py-4 text-white indent-5">
-              <span className="font-semibold text-0xgo-blue">
-                {" "}
-                Cartesi Guardians
-              </span>
-              , is a NFT collection composed of{" "}
-              <span className="font-semibold text-yellow-400">
-                {" "}
-                256 limited editions.
-              </span>{" "}
-              These pieces are not for sale, you will only be able to own a{" "}
-              <span className="font-semibold text-0xgo-blue">
-                Heimdallr Cartesi Guardian{" "}
-              </span>
-              after staking
-              <span className="font-semibold text-yellow-400"> 500 CTSI</span>{" "}
-              tokens, on one of the available pools.
+            secrets of the universe, He is noble and honorable, always acts with
+            integrity. The figure of Heimdallr continues to inspire people today
+            as a symbol of vigilance, protection and fight for worthy causes.
+          </p>
+          <p className="px-24 py-4 text-white indent-5">
+            <span className="font-semibold text-0xgo-blue">
+              {" "}
+              Cartesi Guardians
+            </span>
+            , is a NFT collection composed of{" "}
+            <span className="font-semibold text-yellow-400">
+              {" "}
+              256 limited editions.
+            </span>{" "}
+            These pieces are not for sale, you will only be able to own a{" "}
+            <span className="font-semibold text-0xgo-blue">
+              Heimdallr Cartesi Guardian{" "}
+            </span>
+            after staking
+            <span className="font-semibold text-yellow-400">
+              {" "}
+              500 CTSI
+            </span>{" "}
+            tokens, on one of the available pools.
           </p>
         </div>
       </div>

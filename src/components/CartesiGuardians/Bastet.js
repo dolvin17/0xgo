@@ -20,30 +20,31 @@ export default function Bastet() {
             the ancient Egyptian religion is no longer practiced, Bastet remains
             a popular figure in modern culture. She is depicted in various works
             of art, literature and films, and continues to be a symbol of
-            protection for many people. 
-			<br />Her role as protector made her one of
-            the most beloved and revered deities of ancient Egypt.
-            </p>
-            <p className="px-24 py-4 text-white indent-5">
-              <span className="font-semibold text-0xgo-blue">
-                {" "}
-                Cartesi Guardians
-              </span>
-              , is a NFT collection composed of{" "}
-              <span className="font-semibold text-yellow-400">
-                {" "}
-                256 limited editions.
-              </span>{" "}
-              These pieces are not for sale, you will only be able to own a{" "}
-              <span className="font-semibold text-0xgo-blue">
-                Bastet Cartesi Guardian{" "}
-              </span>
-              after staking
-              <span className="font-semibold text-yellow-400">
-                {" "}
-                1000 CTSI
-              </span>{" "}
-              tokens, on one of the available pools.
+            protection for many people.
+            <br />
+            Her role as protector made her one of the most beloved and revered
+            deities of ancient Egypt.
+          </p>
+          <p className="px-24 py-4 text-white indent-5">
+            <span className="font-semibold text-0xgo-blue">
+              {" "}
+              Cartesi Guardians
+            </span>
+            , is a NFT collection composed of{" "}
+            <span className="font-semibold text-yellow-400">
+              {" "}
+              256 limited editions.
+            </span>{" "}
+            These pieces are not for sale, you will only be able to own a{" "}
+            <span className="font-semibold text-0xgo-blue">
+              Bastet Cartesi Guardian{" "}
+            </span>
+            after staking
+            <span className="font-semibold text-yellow-400">
+              {" "}
+              1000 CTSI
+            </span>{" "}
+            tokens, on one of the available pools.
           </p>
         </div>
       </div>
