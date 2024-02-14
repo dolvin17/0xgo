@@ -40,30 +40,31 @@ export default function Carrusel() {
               imageURL="/nft-keimdall.png"
               precios="500 CTSI"
             />
+         
             <ProductCards
+              name="SIMURGH"
+              imageURL="/nft-simurgh.png"
+              precios="800 CTSI"
+            />
+            <ProductCards
+              name="CALADRIUS"
+              imageURL="/nft-caladrius.png"
+              precios="800 CTSI"
+            />
+            <ProductCards
+              name="PHOENIX"
+              imageURL="/nft-phoenix.png"
+              precios="800 CTSI"
+            />
+			   <ProductCards
               name="Bastet"
               imageURL="/nft-bastet.png"
-              precios="800 CTSI"
+              precios="1000 CTSI"
             />
 
             <ProductCards
               name="Brienne"
               imageURL="/nft-brienne.png"
-              precios="800 CTSI"
-            />
-            <ProductCards
-              name="SIMURGH"
-              imageURL="/nft-simurgh.png"
-              precios="1000 CTSI"
-            />
-            <ProductCards
-              name="CALADRIUS"
-              imageURL="/nft-caladrius.png"
-              precios="1000 CTSI"
-            />
-            <ProductCards
-              name="PHOENIX"
-              imageURL="/nft-phoenix.png"
               precios="1000 CTSI"
             />
             <ProductCards
@@ -94,9 +95,9 @@ export default function Carrusel() {
 }
 function ProductCards({ name, imageURL, precios }) {
   return (
-    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 pt-32 shadow-2xl border-2 rounded-2xl  border-black ">
-      <div className="relative w-full h-[16rem] bg-white ">
-        <figure className="w-64 h-64 transition bg-black border-2 border-black rounded-b-none ">
+    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 pt-32    ">
+      <div className="relative w-full h-[16rem] ">
+        <figure className="w-64 h-64 transition bg-black rounded-b-none ">
           <Image
             className="object-cover w-full h-full scale-[2]"
             fill
@@ -106,7 +107,7 @@ function ProductCards({ name, imageURL, precios }) {
         </figure>
       </div>
       <div className="flex flex-col items-center justify-center mt-24 ml-16 lg:flex-row">
-        <div className="p-3 border-gray-900/10 sm:border-l-transparent ">
+        <div className="p-3 0 ">
           <h3 className="text-xl font-bold tracking-[.25em] antialiased text-center text-yellow-400 uppercase">
             {name}
           </h3>
