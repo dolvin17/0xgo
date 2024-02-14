@@ -15,7 +15,7 @@ export default function Brienne() {
             BRIENNE DE TARTH
           </h1>
           <p className="px-24 text-white indent-5">
-            Brienne, nicknamed &quot;the Maiden of Tarth&quot;, was born into a noble
+            Brienne, nicknamed {`"the Maiden of Tarth"`}, was born into a noble
             family in the Crownlands, (Game of Thrones). As a child, She trained
             in the arts of war, defying the gender expectations of her time. Her
             great size and strength made her a formidable warrior, although she
@@ -31,8 +31,8 @@ export default function Brienne() {
             We love to quote one of her famous quotes:
             <br />
             <span className="italic font-thin">
-              &quot;I am a warrior. I am not a lady. I am not a courtesan. I am
-              a warrior".&quot;"
+             {`"I am a warrior. I am not a lady. I am not a courtesan. I am
+              a warrior"`}
             </span>
           </p>
           <p className="px-24 py-4 text-white indent-5">
