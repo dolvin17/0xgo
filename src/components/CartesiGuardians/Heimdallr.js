@@ -29,7 +29,8 @@ export default function Heimdallr() {
             acts with integrity. The figure of Heimdallr continues to inspire
             people today as a symbol of vigilance, protection and fight for
             worthy causes.
-            <p className="py-4">
+            </p>
+            <p className="px-24 py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Guardians
@@ -46,7 +47,6 @@ export default function Heimdallr() {
               after staking
               <span className="font-semibold text-yellow-400"> 500 CTSI</span>{" "}
               tokens, on one of the available pools.
-            </p>
           </p>
         </div>
       </div>

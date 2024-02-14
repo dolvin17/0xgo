@@ -28,7 +28,8 @@ export default function EarlyMates() {
             path that we undertake with great enthusiasm, but that we know will
             be hard, we need to surround ourselves with exceptional people.
             <br />
-            <p className="py-4">
+            </p>
+            <p className="px-24 py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Early M8s
@@ -45,7 +46,8 @@ export default function EarlyMates() {
               </Link>
               , and acquire the corresponding role, Be one of the lucky owners
               of one of the limited editions of the Cartesi Early Mate.
-            </p>
+			  <br />
+			  <br />
             Thank you for considering being part of our family.
           </p>
         </div>

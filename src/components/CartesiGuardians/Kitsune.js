@@ -27,7 +27,8 @@ export default function Kitsune() {
             Kitsune are celebrated not only for their magical qualities but also
             as icons of intelligence and resilience.
             <br />
-            <p className="py-4">
+          </p>
+            <p className="px-24 py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Guardians
@@ -44,7 +45,6 @@ export default function Kitsune() {
 			  after staking<span className="font-semibold text-yellow-400"> 50 CTSI</span> tokens,
 			  on one of the available pools.
             </p>
-          </p>
         </div>
       </div>
 		</>

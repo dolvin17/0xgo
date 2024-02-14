@@ -4,7 +4,7 @@ export default function Bastet() {
   return (
     <>
       <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
-        <ProductCards name="BASTET" imageURL="/nft-bastet.png" precios="800" />
+        <ProductCards name="BASTET" imageURL="/nft-bastet.png" precios="1000" />
         <div className="flex flex-col items-center">
           <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
             {" "}
@@ -23,7 +23,8 @@ export default function Bastet() {
             protection for many people. 
 			<br />Her role as protector made her one of
             the most beloved and revered deities of ancient Egypt.
-            <p className="py-4">
+            </p>
+            <p className="px-24 py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Guardians
@@ -40,10 +41,9 @@ export default function Bastet() {
               after staking
               <span className="font-semibold text-yellow-400">
                 {" "}
-                800 CTSI
+                1000 CTSI
               </span>{" "}
               tokens, on one of the available pools.
-            </p>
           </p>
         </div>
       </div>

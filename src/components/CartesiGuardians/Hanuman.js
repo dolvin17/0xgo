@@ -29,7 +29,8 @@ export default function Kitsune() {
             the four Vedas and the six shastras. The Monkey God does not boast
             about how much he knows; It is the real expression of humility.
             <br />
-            <p className="py-4">
+            </p>
+            <p className="px-24 py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Guardians
@@ -49,7 +50,6 @@ export default function Kitsune() {
                 250 CTSI
               </span>{" "}
               tokens, on one of the available pools.
-            </p>
           </p>
         </div>
       </div>
