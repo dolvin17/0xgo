@@ -47,8 +47,8 @@ export default function Carrusel() {
             />
 
             <ProductCards
-              name="DRAKE"
-              imageURL="/nft-drake.png"
+              name="Brienne"
+              imageURL="/nft-brienne.png"
               precios="800 CTSI"
             />
             <ProductCards
