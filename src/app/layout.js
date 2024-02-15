@@ -8,6 +8,7 @@ import { goerli, mainnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const { chains, publicClient } = configureChains(
   [goerli],
   [publicProvider()]
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
       <body>
         <WagmiConfig config={wagmiConfig}>
 			<Analytics />
+			<SpeedInsights />
           <RainbowKitProvider modalSize="compact" chains={chains} >{children}</RainbowKitProvider>
         </WagmiConfig>
       </body>
