@@ -5,7 +5,7 @@ export default function Brienne() {
     <>
       <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
         <ProductCards
-          name="BASTET"
+          name="BRIENNE"
           imageURL="/nft-brienne.png"
           precios="1000"
         />

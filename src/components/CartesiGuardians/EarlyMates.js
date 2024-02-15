@@ -5,14 +5,14 @@ export default function EarlyMates() {
 	return (
 		<>
 		
-      <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
+      <div className="flex flex-col items-center justify-center gap-12 mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
         <ProductCards
           name="Early M8s"
           imageURL="/nft-m8.png"
           precios="Discord Role"
         />
-        <div className="flex flex-col items-center">
-          <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
+        <div className="flex flex-col items-center h-[200px] overflow-y-auto">
+          <h1 className="pb-8 text-4xl font-bold tracking-widest">
             {" "}
             WELCOME, EARLY M8s
           </h1>

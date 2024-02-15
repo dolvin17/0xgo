@@ -18,7 +18,7 @@ export default function Carrusel() {
 		Learn more
 		</Link>
         <div className="z-0 flex flex-row flex-wrap items-center justify-center w-full overflow-hidden text-gray-600 bg-white8">
-          <Marquee className="overflow-hidden" pauseOnHover gradient={false} speed={50}>
+          <Marquee className="overflow-hidden" pauseOnHover gradient={false} speed={80}>
             <ProductCards
               name="M8"
               imageURL="/nft-m8.png"
@@ -40,15 +40,14 @@ export default function Carrusel() {
               imageURL="/nft-keimdall.png"
               precios="500 CTSI"
             />
-         
-            <ProductCards
-              name="SIMURGH"
-              imageURL="/nft-simurgh.png"
-              precios="800 CTSI"
-            />
             <ProductCards
               name="CALADRIUS"
               imageURL="/nft-caladrius.png"
+              precios="800 CTSI"
+            />
+			   <ProductCards
+              name="MORGANA"
+              imageURL="/nft-simurgh.png"
               precios="800 CTSI"
             />
             <ProductCards
@@ -106,7 +105,7 @@ function ProductCards({ name, imageURL, precios }) {
           />
         </figure>
       </div>
-      <div className="flex flex-col items-center justify-center mt-24 ml-16 lg:flex-row">
+      <div className="flex flex-col items-center justify-center mt-24 ml-8 lg:flex-row">
         <div className="p-3 0 ">
           <h3 className="text-xl font-bold tracking-[.25em] antialiased text-center text-yellow-400 uppercase">
             {name}
