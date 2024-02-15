@@ -3,18 +3,19 @@ import Image from "next/image";
 export default function Kitsune() {
   return (
     <>
-      <div className="flex flex-row items-center justify-center gap-12 mt-4 overflow-hidden rounded-xl sm:mx-48 bg-0xgo-dark">
+      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
         <ProductCards
           name="HANUMAN"
           imageURL="/nft-hanuman.png"
           precios="250"
         />
-        <div className="flex flex-col items-center">
-          <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
+        <div className="flex flex-col items-center  h-[400px]">
+          <h1 className="pb-8 text-4xl font-bold tracking-widest text-center text-yellow-400">
             {" "}
             HANUMAN
           </h1>
-          <p className="px-24 text-white indent-5">
+		  <div  className="p-2 overflow-y-auto sm:pr-16 ">
+          <p className="text-white indent-5">
             Hanuman, the revered monkey god in Hinduism, recognized for his
             strength and wisdom. He represents unparalleled physical and mental
             strength, also lifts mountains with ease and travels long distances,
@@ -30,7 +31,7 @@ export default function Kitsune() {
             about how much he knows; It is the real expression of humility.
             <br />
             </p>
-            <p className="px-24 py-4 text-white indent-5">
+            <p className="py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Guardians
@@ -52,34 +53,36 @@ export default function Kitsune() {
               tokens, on one of the available pools.
           </p>
         </div>
+        </div>
       </div>
     </>
   );
 }
 function ProductCards({ name, imageURL, precios }) {
-  return (
-    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  py-32  ">
-      <div className="relative w-full h-full">
-        <figure className="w-64 h-64 ">
-          <Image
-            className="object-cover w-full h-full scale-[2]"
-            fill
-            src={imageURL}
-            alt=""
-          />
-        </figure>
-      </div>
-      <div className="flex flex-col items-center justify-center mt-32 ml-16 lg:flex-row">
-        <div className="p-3 border-gray-900/10 sm:border-l-transparent ">
-          <h3 className="text-xl font-bold text-center tracking-[.25em] antialiased text-yellow-400 uppercase">
-            {name}
-          </h3>
-          <p className="flex flex-row gap-1 px-16 font-thin text-white ">
-            {precios}
-            <Image src="/ctsi.svg" alt="0xGO" width={14} height={14} />
-          </p>
-        </div>
-      </div>
-    </article>
-  );
-}
+	return (
+		<article className="flex flex-col ">
+		  <div className="relative w-full h-full ">
+			<figure className="w-[500px] h-[500px] ">
+			  <Image
+				className="object-cover"
+				fill
+				src={imageURL}
+				alt=""
+			  />
+			</figure>
+		  </div>
+		  <div className="flex flex-col items-center justify-center ml-16 lg:flex-row">
+			<div className="p-x border-gray-900/10 sm:border-l-transparent ">
+			  <h3 className="text-xl font-bold text-center -skew-y-3 tracking-[.25em]  antialiased  text-yellow-400 uppercase">
+				{name}
+			  </h3>
+			  <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-white -skew-y-3 ">
+				{precios}
+				<Image src="/ctsi.svg" alt="0xGO" width={14} height={14} />
+			  </p>
+			</div>
+		  </div>
+		</article>
+	  );
+	}
+	

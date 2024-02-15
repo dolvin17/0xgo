@@ -5,18 +5,20 @@ export default function EarlyMates() {
 	return (
 		<>
 		
-      <div className="flex flex-col items-center justify-center gap-12 mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
+      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
         <ProductCards
-          name="Early M8s"
+          name="Early MATE"
           imageURL="/nft-m8.png"
           precios="Discord Role"
         />
-        <div className="flex flex-col items-center h-[200px] overflow-y-auto">
-          <h1 className="pb-8 text-4xl font-bold tracking-widest">
+        <div className="flex flex-col items-center h-[400px]">
+          <h1 className="pb-8 text-4xl font-bold tracking-widest text-center text-yellow-400">
             {" "}
-            WELCOME, EARLY M8s
+            WELCOME, <span className="text-0xgo-blue"> EARLY MATE</span> 
           </h1>
-          <p className="px-24 text-white indent-5">
+		  <div  className="p-2 overflow-y-auto sm:pr-16 ">
+
+          <p className="text-white indent-5">
             In mythology and culture, unicorns have been symbols of nobility and
             greatness, the concept of a unicorn as a unique and special being
             persists and, in fact, has evolved to adapt to various modern
@@ -29,7 +31,7 @@ export default function EarlyMates() {
             be hard, we need to surround ourselves with exceptional people.
             <br />
             </p>
-            <p className="px-24 py-4 text-white indent-5">
+            <p className="py-4 text-white indent-5">
               <span className="font-semibold text-0xgo-blue">
                 {" "}
                 Cartesi Early M8s
@@ -50,6 +52,7 @@ export default function EarlyMates() {
 			  <br />
             Thank you for considering being part of our family.
           </p>
+		  </div>
         </div>
       </div>
 		</>
@@ -57,23 +60,23 @@ export default function EarlyMates() {
 }
 function ProductCards({ name, imageURL, precios }) {
 	return (
-	  <article className="flex  mx-12 flex-col w-full max-w-[16rem]  py-32  ">
-		<div className="relative w-full h-full">
-		  <figure className="w-64 h-64 ">
+	  <article className="flex flex-col ">
+		<div className="relative w-full h-full ">
+		  <figure className="w-[500px] h-[500px] ">
 			<Image
-			  className="object-cover w-full h-full scale-[2]"
+			  className="object-cover"
 			  fill
 			  src={imageURL}
 			  alt=""
 			/>
 		  </figure>
 		</div>
-		<div className="flex flex-col items-center justify-center mt-32 ml-16 lg:flex-row">
-		  <div className="p-3 border-gray-900/10 sm:border-l-transparent ">
-			<h3 className="text-xl font-bold text-center tracking-[.25em] antialiased text-yellow-400 uppercase">
+		<div className="flex flex-col items-center justify-center ml-16 lg:flex-row">
+		  <div className="p-x border-gray-900/10 sm:border-l-transparent ">
+			<h3 className="text-xl font-bold text-center -skew-y-3 tracking-[.25em]  antialiased  text-yellow-400 uppercase">
 			  {name}
 			</h3>
-			<p className="flex flex-row gap-1 px-4 font-thin text-white ">
+			<p className="flex flex-row gap-1 px-16 mb-8 font-thin text-white -skew-y-3 ">
 			  {precios}
 			  <Image src="/ctsi.svg" alt="0xGO" width={14} height={14} />
 			</p>
