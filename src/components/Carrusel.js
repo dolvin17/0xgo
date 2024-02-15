@@ -11,16 +11,16 @@ export default function Carrusel() {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-8 overflow-x-hidden text-gray-900 ">
-        <h1 className="text-4xl antialiased font-black text-yellow-400 tracking-[.25em] animate-fade-down animate-once animate-duration-700 animate-delay-300   ">
+        <h1 className="text-5xl antialiased font-black text-yellow-400 tracking-[.25em] animate-fade-down animate-once animate-duration-700 animate-delay-300   ">
 		EARN YOU BADGE
         </h1>
-		<Link href="/guardians" className="pb-4 italic underline hover:text-cyan-400 text-0xgo-blue/50 ">
+		<Link href="/guardians" className="py-4 italic underline hover:text-orange-400 text-0xgo-blue/100 ">
 		Learn more
 		</Link>
-        <div className="z-0 flex flex-row flex-wrap items-center justify-center w-full overflow-hidden text-gray-600 bg-white8">
+        <div className="z-0 flex flex-row flex-wrap items-center justify-center w-full mt-8 overflow-hidden text-gray-600">
           <Marquee className="overflow-hidden" pauseOnHover gradient={false} speed={80}>
             <ProductCards
-              name="M8"
+              name="EARLY MATE"
               imageURL="/nft-m8.png"
               precios="Discord Role"
             />
@@ -94,28 +94,28 @@ export default function Carrusel() {
 }
 function ProductCards({ name, imageURL, precios }) {
   return (
-    <article className="flex  mx-12 flex-col w-full max-w-[16rem]  transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700 pt-32    ">
-      <div className="relative w-full h-[16rem] ">
-        <figure className="w-64 h-64 transition bg-black rounded-b-none ">
-          <Image
-            className="object-cover w-full h-full scale-[2]"
-            fill
-            src={imageURL}
-            alt=""
-          />
-        </figure>
-      </div>
-      <div className="flex flex-col items-center justify-center mt-24 ml-8 lg:flex-row">
-        <div className="p-3 0 ">
-          <h3 className="text-xl font-bold tracking-[.25em] antialiased text-center text-yellow-400 uppercase">
-            {name}
-          </h3>
-          <p className="flex flex-row gap-1 px-4 font-thin text-white ">
-            {precios}
-            <Image src="/ctsi.svg" alt="0xGO" width={14} height={14} />
-          </p>
-        </div>
-      </div>
+    <article className="flex flex-col  -mx-[75px] transition-transform animate-wiggle animate-infinite animate-duration-[6000ms] animate-delay-700    ">
+       <div className="relative w-full h-full ">
+			<figure className="w-[500px] h-[500px] ">
+			  <Image
+				className="object-cover"
+				fill
+				src={imageURL}
+				alt=""
+			  />
+			</figure>
+		  </div>
+		  <div className="flex flex-col items-center justify-center ml-8 lg:flex-row">
+			<div className="p-x border-gray-900/10 sm:border-l-transparent ">
+			  <h3 className="text-xl font-bold text-center tracking-[.25em]  antialiased  text-yellow-400 uppercase">
+				{name}
+			  </h3>
+			  <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-white ">
+				{precios}
+				<Image src="/ctsi.svg" alt="0xGO" width={14} height={14} />
+			  </p>
+			</div>
+		  </div>
     </article>
   );
 }

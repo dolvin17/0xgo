@@ -36,7 +36,7 @@ export default function Stage() {
       </div>
       <div className="static flex flex-col items-center justify-center p-4">
         <div className="flex flex-row ">
-          <div className="hidden sm:block animate-fade opacity-75 animate-once animate-duration-[1000ms] animate-delay-300 animate-ease-in-out">
+          <div className="hidden sm:block animate-fade opacity-75 animate-once animate-duration-[1000ms] animate-delay-200 animate-ease-in-out">
             <Image src="/cartesito.png" alt="" width={600} height={600} />
           </div>
         </div>
