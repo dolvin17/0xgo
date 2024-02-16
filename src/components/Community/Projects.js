@@ -7,14 +7,14 @@ import { FaLocationArrow } from "react-icons/fa";
 export default function Projects() {
   return (
     <>
-      <div className="flex flex-col mb-8 sm:mx-48 bg-0xgo-dark rounded-xl sm:py-24">
-        <div className="flex flex-col items-center justify-center flex-grow gap-8 pt-16 sm:pt-1 sm:flex-row sm:px-48">
+      <div className="flex flex-col mb-8 sm:mx-48 bg-0xgo-dark rounded-xl ">
+        <div className="flex flex-col items-center justify-center flex-grow gap-8 pt-16 sm:pt-1 sm:flex-row sm:px-32">
           <h1 className="flex-grow my-8 text-2xl text-yellow-400">
             {" "}
             Approved Communities (3)
           </h1>
           <Link
-            href="/"
+            href="https://airtable.com/appTTWoz0AHF93zZb/pag843XDNt3TYVK9u/form" target="_blank"
             className="flex flex-row items-center justify-center gap-2 p-2 text-center border-2 hover:bg-black text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
           >
             <CiSquarePlus size={30} className="text-0xgo-blue" />

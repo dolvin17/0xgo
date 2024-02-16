@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SecondState() {
   return (
     <>
-      <div className="grid gap-4 px-8 py-16 mt-4 sm:grid-cols-2 sm:flex-col-reverse">
+      <div className="grid gap-4 my-2 sm:py-16 sm:px-8 sm:grid-cols-2 w-fit sm:mx-32">
         <div className="flex items-center justify-center">
        <Image className="transition-transform animate-fade-right animate-once animate-duration-[3000ms] animate-delay-700"src="/node.gif" alt="" width={400} height={400} />
         </div>
