@@ -7,8 +7,8 @@ import { FaLocationArrow } from "react-icons/fa";
 export default function Projects() {
   return (
     <>
-      <div className="flex flex-col sm:mx-48 bg-0xgo-dark rounded-xl sm:py-24">
-        <div className="flex flex-col items-center justify-center flex-grow gap-8 sm:flex-row sm:px-48">
+      <div className="flex flex-col mb-8 sm:mx-48 bg-0xgo-dark rounded-xl sm:py-24">
+        <div className="flex flex-col items-center justify-center flex-grow gap-8 pt-16 sm:pt-1 sm:flex-row sm:px-48">
           <h1 className="flex-grow my-8 text-2xl text-yellow-400">
             {" "}
             Approved Communities (3)
