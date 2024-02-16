@@ -9,7 +9,7 @@ export default function Heimdallr() {
           imageURL="/nft-keimdall.png"
           precios="500"
         />
-        <div className="flex flex-col items-center h-[400px]">
+        <div className="flex flex-col items-center h-[300px]">
           <h1 className="pb-8 text-4xl font-bold tracking-widest text-center text-yellow-400">
             {" "}
             HEIMDALLR
@@ -19,7 +19,7 @@ export default function Heimdallr() {
             Heimdallr is a legendary figure known for his role protecting the
             kingdom of the gods. He has supernatural sight and hearing that
             allow him to observe and hear everything that happens in the nine
-            worlds. He can see to the end of time and hear the grass growing. He
+            worlds. He
             stands on the Bifröst, the bridge that connects Asgard to Midgard.
             His constant vigilance protects Asgard from intrusions and threats.
             He is also known for his wielding of the Gjallarhorn, the magical
@@ -27,7 +27,7 @@ export default function Heimdallr() {
             <br />
             Heimdallr represents light and vigilance. Despite knowing all the
             secrets of the universe, He is noble and honorable, always acts with
-            integrity. The figure of Heimdallr continues to inspire people today
+            integrity. Heimdallr continues to inspire people today
             as a symbol of vigilance, protection and fight for worthy causes.
           </p>
           <p className="py-4 text-white indent-5">
@@ -77,7 +77,7 @@ function ProductCards({ name, imageURL, precios }) {
 			  </h3>
 			  <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-white -skew-y-3 ">
 				{precios}
-				<Image src="/ctsi.svg" alt="0xGO" width={14} height={14} />
+				<Image src="/ctsi.svg" alt="0xGO" width={20} height={20} />
 			  </p>
 			</div>
 		  </div>
