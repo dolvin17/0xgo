@@ -16,7 +16,7 @@ export default function EarlyMates() {
             {" "}
             WELCOME, <span className="text-0xgo-blue"> EARLY MATE</span>
           </h1>
-          <div className="p-2 overflow-y-auto sm:pr-16 ">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
             <p className="text-white indent-5">
               In mythology and culture, unicorns have been symbols of nobility
               and greatness, the concept of a unicorn as a unique and special

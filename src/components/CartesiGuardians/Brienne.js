@@ -14,7 +14,7 @@ export default function Brienne() {
             {" "}
             BRIENNE DE TARTH
           </h1>
-          <div className="p-2 overflow-y-auto sm:pr-16 ">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
             <p className="text-white indent-5">
               Brienne, {`"the Maiden of Tarth"`}, was born into a noble family
               in the Crownlands, (Game of Thrones). As a child, She trained in

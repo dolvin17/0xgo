@@ -14,7 +14,7 @@ export default function Heimdallr() {
             {" "}
             HEIMDALLR
           </h1>
-		  <div  className="p-2 overflow-y-auto sm:pr-16 ">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
           <p className="text-white indent-5">
             Heimdallr is a legendary figure known for his role protecting the
             kingdom of the gods. He has supernatural sight and hearing that

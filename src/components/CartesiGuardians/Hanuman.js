@@ -14,7 +14,7 @@ export default function Kitsune() {
             {" "}
             HANUMAN
           </h1>
-          <div className="p-2 overflow-y-auto sm:pr-16 ">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
             <p className="text-white indent-5">
               Hanuman, the revered monkey god in Hinduism, recognized for his
               strength and wisdom. He represents a physical and mental strength,

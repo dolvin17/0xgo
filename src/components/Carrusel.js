@@ -11,7 +11,7 @@ export default function Carrusel() {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-8 overflow-x-hidden text-gray-900 ">
-        <h1 className="text-5xl antialiased font-black text-yellow-400 tracking-[.25em] animate-fade-down animate-once animate-duration-700 animate-delay-300   ">
+        <h1 className="text-5xl text-center antialiased font-black text-yellow-400 tracking-[.25em] animate-fade-down animate-once animate-duration-700 animate-delay-300   ">
 		EARN YOU BADGE
         </h1>
 		<Link href="/guardians" className="py-4 italic underline hover:text-orange-400 text-0xgo-blue/100 ">

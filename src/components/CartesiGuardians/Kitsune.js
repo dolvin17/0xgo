@@ -6,12 +6,12 @@ export default function Kitsune() {
       <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
         {" "}
         <ProductCards name="KITSUNE" imageURL="/nft-kitsune.png" precios="50" />
-        <div className="flex flex-col items-center h-[300]">
+        <div className="flex flex-col items-center h-[300px]">
           <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
             {" "}
             KITSUNE
           </h1>
-          <div className="p-2 overflow-y-auto sm:pr-16">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
             <p className="text-white indent-5">
               The mythical nine-tailed foxes are revered for their cunning and
               intelligence, their shape-shifting abilities, and their connection
@@ -20,7 +20,9 @@ export default function Kitsune() {
               <br /> Kitsune hold a special place in folklore as unique and
               extraordinary creatures. Its ability to transform and navigate
               between worlds symbolizes adaptability and a deep understanding of
-              the complexities of life. In modern contexts, Kitsune are
+              the complexities of life. 
+			  <br/>
+			  In modern contexts, Kitsune are
               celebrated not only for their magical qualities but also as icons
               of intelligence and resilience.
               <br />

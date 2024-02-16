@@ -10,7 +10,7 @@ export default function Bastet() {
             {" "}
             BASTET
           </h1>
-          <div className="p-2 overflow-y-auto sm:pr-16 ">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16 ">
             <p className="text-white indent-5">
               Bastet, the complex and multifaceted Egyptian goddess, worshiped
               by people of all social classes for thousands of years, was one of
