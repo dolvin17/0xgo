@@ -26,6 +26,14 @@ export default function Navigation() {
             Mint NFT{" "}
           </Link>
         </div>
+		<div className="flex-grow">
+          <Link
+            href="/communities"
+            className="p-2 border-2 text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
+          >
+            Communities{" "}
+          </Link>
+        </div>
         <ConnectButton />
       </div>
     </Fragment>,
