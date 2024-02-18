@@ -8,9 +8,10 @@ import { useAccount } from "wagmi";
 import { useContractWrite, usePrepareContractWrite } from "wagmi";
 import { isLoading, isSuccess, data, write } from "react-query";
 import { parseEther } from "viem";
-import { useState } from "react";
+import { use, useState } from "react";
 import { erc20ABI } from "wagmi";
 import Image from "next/image";
+import clsx from "clsx";
 
 const abi = require("./contract.json");
 
@@ -22,10 +23,14 @@ export default function ApproveStake() {
 
   const [amount, setAmount] = useState("");
   const parsedAmount = parseEther(amount || "0");
+
+  const [isApproved, setApproved] = useState(false);
+
   const {
     config,
     error: prepareError,
     isError: isPrepareError,
+    isLoading: isAproving,
   } = usePrepareContractWrite({
     address: "0x9d2133302B0beB040d2E86D1fbC78Da1Dea9Fa3e", // CTSI token address
     abi: erc20ABI,
@@ -36,6 +41,7 @@ export default function ApproveStake() {
     data,
     error,
     isError,
+    isLoading: isStaking,
     write: writeApprove,
   } = useContractWrite(config);
 
@@ -48,18 +54,24 @@ export default function ApproveStake() {
     args: ["0x3c0e20fCA6d2E084127D056377a5f35294503447", parsedAmount],
   });
 
-  function staker() {
-    if (address) {
-      if (config) {
-        writeApprove?.();
+  const handleStake = async () => {
+    try {
+      if (address) {
+        if (!isApproved) {
+          await writeApprove();
+          setApproved(true);
+        } else {
+          await writeStake();
+        }
+      } else {
+        openAccountModal();
       }
-      if (writeApprove) {
-        writeStake?.();
-      }
-    } else {
-      openAccountModal();
+    } catch (error) {
+      console.error("The error is", error);
     }
-  }
+  };
+
+  const isDisabled = !amount || isAproving || isStaking;
   return (
     <>
       <label className="flex items-center pl-4 pr-2 border-2 rounded-lg border-white/30 bg-white/10">
@@ -87,10 +99,14 @@ export default function ApproveStake() {
       </label>
       <button
         suppressHydrationWarning
-        onClick={() => staker()}
-        className="items-center flex-grow w-full py-4 pl-4 pr-2 my-4 text-xl font-bold text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue"
+        disabled={isDisabled}
+        onClick={() => handleStake()}
+        className={clsx(
+          "items-center flex-grow w-full py-4 pl-4 pr-2 my-4 text-xl font-bold text-black rounded-lg bg-0xgo-blue/90 hover:bg-0xgo-blue",
+		  isDisabled && "opacity-60 cursor-not-allowed"
+        )}
       >
-        <div>Stake</div>
+        <div>{isApproved ? "Stake" : "Approve"} </div>
       </button>
     </>
   );
