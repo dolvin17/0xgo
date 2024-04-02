@@ -18,6 +18,11 @@ export default function Stake() {
   const [selectedMouth, setMouth] = useState("");
   const [isNFTminting, setNFTminting] = useState(false);
 
+  const [backgroundIndex, setBackgroundIndex] = useState(0);
+  const [bodyIndex, setBodyIndex] = useState(0);
+  const [eyesIndex, setEyesIndex] = useState(0);
+  const [mouthIndex, setMouthIndex] = useState(0);
+
   const canvasRef = useRef(null);
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -53,6 +58,19 @@ export default function Stake() {
       backgroundImage.src = selectedBackground;
     }
   }, [selectedBackground, selectedBody, selectedEyes, selectedMouth]);
+
+  const prevImage = (index, setIndex, array) => {
+	const newIndex = index === 0 ? array.length - 1 : index - 1;
+	setIndex(newIndex);
+	return array[newIndex];
+  };
+  
+  const nextImage = (index, setIndex, array) => {
+	const newIndex = index === array.length - 1 ? 0 : index + 1;
+	setIndex(newIndex);
+	return array[newIndex];
+  };
+  
   return (
     <>
       <Navigation />
@@ -67,67 +85,89 @@ export default function Stake() {
             rewards earned + VIP feature access
           </span>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="flex flex-col-reverse gap-4 sm:flex-row-reverse">
           <div className="w-full gap-8 p-2 rounded-lg bg-white/50">
-            <div className="flex flex-col p-1 mx-4 ">
-              <h3 className="w-[100px] font-thin">Background</h3>
+		  <div className="flex items-center w-[420px] h-[72px] flex-grow gap-32 my-4 justify-center p-1 mx-4 border-2 border-0xgo-blue ">
+			<button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                  setBackground(
+                    prevImage(backgroundIndex, setBackgroundIndex, background)
+                  )
+                }
+              >
+                {"<"}
+              </button>
+              <h3 className="w-[100px] font-black text-black text-center ">Background</h3>
               <div className="flex flex-row">
-                {background.map((bg) => (
-                  <img
-                    src={bg}
-                    key={bg}
-                    onClick={() => setBackground(bg)}
-                    className={`w-20 h-20 cursor-pointer rounded-lg ${
-                      bg === selectedBackground ? "border-2 border-white" : ""
-                    } mr-4`}
-                  />
-                ))}
+			  <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+				onClick={() =>
+					  setBackground(
+						nextImage(backgroundIndex, setBackgroundIndex, background)
+					  )
+					}
+				  >
+					{">"}
+				  </button>
               </div>
             </div>
-            <div className="flex flex-col p-1 mx-4">
-              <h3 className="w-[100px] font-thin">Body</h3>
-              <div className="flex flex-row">
-                {body.map((bd) => (
-                  <img
-                    src={bd}
-                    key={bd}
-                    onClick={() => setBody(bd)}
-                    className={`w-20 h-20 cursor-pointer rounded-lg ${
-                      bd === selectedBody ? "border-2 border-white" : ""
-                    } mr-4`}
-                  />
-                ))}
-              </div>
+			<div className="flex items-center w-[420px] h-[72px] flex-grow gap-32 my-4 justify-center p-1 mx-4 border-2  border-0xgo-blue  ">
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                  setBody(prevImage(bodyIndex, setBodyIndex, body))
+                }
+              >
+                {"<"}
+              </button>
+			  <h3 className="w-[100px] font-black text-black text-center ">Body</h3>
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                  setBody(nextImage(bodyIndex, setBodyIndex, body))
+                }
+              >
+                {">"}
+              </button>
             </div>
-            <div className="flex flex-col p-1 mx-4">
-              <h3 className="w-[100px] font-thin">Eyes</h3>
-              <div className="flex flex-row">
-                {eyes.map((eye) => (
-                  <img
-                    src={eye}
-                    key={eye}
-                    onClick={() => setEyes(eye)}
-                    className={`w-20 h-20 cursor-pointer rounded-lg ${
-                      eye === selectedEyes ? "border-2 border-white" : ""
-                    } mr-4`}
-                  />
-                ))}
-              </div>
+            <div className="flex items-center w-[420px] h-[72px] flex-grow gap-32 my-4 justify-center p-1 mx-4 border-2  border-0xgo-blue  ">
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                   setEyes(prevImage(eyesIndex,  setEyesIndex, eyes))
+                }
+              >
+                {"<"}
+              </button>
+              <h3 className="w-[100px] font-black text-black text-center ">Eyes</h3>
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                   setEyes(nextImage(eyesIndex,  setEyesIndex, eyes))
+                }
+              >
+                {">"}
+              </button>
             </div>
-            <div className="flex flex-col p-1 mx-4">
-              <h3 className="w-[100px] font-thin">Mouth</h3>
-              <div className="flex flex-row">
-                {mouth.map((mt) => (
-                  <img
-                    src={mt}
-                    key={mt}
-                    onClick={() => setMouth(mt)}
-                    className={`w-20 h-20 cursor-pointer rounded-lg ${
-                      mt === selectedMouth ? "border-2 border-white" : ""
-                    } mr-4`}
-                  />
-                ))}
-              </div>
+			<div className="flex items-center w-[420px] h-[72px] flex-grow gap-32 my-4 justify-center p-1 mx-4 border-2  border-0xgo-blue  ">
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                   setMouth(prevImage(mouthIndex,  setMouthIndex, mouth))
+                }
+              >
+                {"<"}
+              </button>
+              <h3 className="w-[100px] font-black text-black text-center ">Mouth</h3>
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                   setMouth(nextImage(mouthIndex,  setMouthIndex, mouth))
+                }
+              >
+                {">"}
+              </button>
             </div>
 
             <button
