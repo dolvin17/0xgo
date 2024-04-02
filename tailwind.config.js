@@ -16,6 +16,7 @@ module.exports = {
 	  },
       fontFamily: {
         "0xgo": ["Roboto", "sans-serif"],
+		sans: ['var(--font-londrina)'],
       },
       colors: {
         "0xgo": {
