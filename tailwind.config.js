@@ -18,6 +18,9 @@ module.exports = {
         "0xgo": ["Roboto", "sans-serif"],
 		sans: ['var(--font-londrina)'],
       },
+	  backgroundImage: {
+        "nouns-sea": "url('/bg_theme4.svg') ",
+      },
       colors: {
         "0xgo": {
           dark: "#1D1D1D",
@@ -25,11 +28,7 @@ module.exports = {
           green: "#00E834",
         },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+  
 	  backgroundSize: {
         '300%': '300%',
       },
