@@ -31,11 +31,11 @@ function Portfolio() {
   };
 
   return (
-    <div  className="w-full max-w-xl mx-auto mt-8 bg-black border-opacity-50 rounded-2xl shadow-black/30">
+    <div  className="w-full max-w-xl mx-auto mt-8 text-black border border-opacity-50 bg-white/50 backdrop-blur-sm rounded-2xl shadow-black/30">
       <div className="flex flex-row items-center px-5 pt-4 border-slate-100 dark:border-slate-700">
-        <h2 className="mt-4 font-semibold text-slate-800 dark:text-slate-100">PORTFOLIO</h2>
+        <h2 className="mt-4 font-semibold text-black ">PORTFOLIO</h2>
 		<div className='flex flex-grow'></div>
-	  <p className="px-5 mt-4 text-xs text-slate-800 text-white/40">*Hover to see your investment</p>
+	  <p className="px-5 mt-4 text-xs text-black/40">*Hover to see your investment</p>
       </div>
       {/* Chart built with Chart.js 3 */}
       <div className="mx-auto grow">
@@ -43,11 +43,11 @@ function Portfolio() {
         <LineChart02 data={chartData} width={595} height={42} />
       </div>
 	  <div className='flex items-center justify-between gap-10 pt-4 mx-2 w-fit'>
-		<span className='text-white/50 sm:w-[120px] font-thin'>Organization </span>
-		<span className='text-white/50 sm:w-[65px] font-thin'>Alloc. </span>
-		<span className='text-white/50 w-[40px] sm:w-[65px] font-thin'>Your Deposit </span>
-		<span className='text-white/50 w-[30px] sm:w-[80px] font-thin'>Total Earned </span>
-		<span className='text-white/50 sm:w-[50px] font-thin'>Donated </span>
+		<span className='text-dark/50 sm:w-[120px] font-thin'>Organization </span>
+		<span className='text-dark/50 sm:w-[65px] font-thin'>Alloc. </span>
+		<span className='text-dark/50 w-[40px] sm:w-[65px] font-thin'>Your Deposit </span>
+		<span className='text-dark/50 w-[30px] sm:w-[80px] font-thin'>Total Earned </span>
+		<span className='text-dark/50 sm:w-[50px] font-thin'>Donated </span>
 	  </div>
 	<Organizations />
 	<div className='grid flex-row items-center justify-center grid-cols-2 gap-4 px-2 py-4 mx-1 mb-2 border-b-2 border-white/40'>

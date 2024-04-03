@@ -9,7 +9,7 @@ export default function Organizations() {
       <div className="py-4 md:flex-row">
         <Organization
           
-          imageURL="/herdaospain.svg"
+          imageURL="/herdaospain_logo_negro.png"
           alloc="65%"
 		  deposit="0.3ETH"
 		  earned="$545"
@@ -45,10 +45,10 @@ function Organization({imageURL, alloc, deposit, earned, donated, color }) {
  <div className="flex flex-row items-center justify-center gap-2">
 	   <TbPointFilled style={{color}} className="flex mx-2 size-6" />
 	   {imageURL && <Image  className="object-contain w-[50px] h-[10]  mr-10 sm:mr-16" src={imageURL} alt="arrow-right" width={50} height={50} />}
-	   	<span className='flex flex-grow py-2 text-white/50'>{alloc}</span>
+	   	<span className='flex flex-grow py-2 text-black/50'>{alloc}</span>
         <span className='flex flex-grow'>{deposit}</span>
         <span className='flex flex-grow '>{earned}</span>
-        <span className='flex items-center justify-center flex-grow text-0xgo-blue'>{donated}</span>
+        <span className='flex items-center justify-center flex-grow text-yellow-500'>{donated}</span>
  </div>
   );
 }

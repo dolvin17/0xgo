@@ -5,9 +5,9 @@ export default function Caring() {
   return (
     <>
       <a className="flex-shrink-0" href="/">
-        <div className="flex flex-row max-w-xl gap-8 p-6 mx-1 my-8 border-opacity-50 w-fit sm:mx-auto bg-0xgo-dark rounded-2xl shadow-black/30">
-          <Image  className="relative object-cover w-full " src="/caring.png" alt="caring" width={110} height={100} />
-          <div className="flex flex-col text-white">
+        <div className="flex flex-row max-w-xl gap-8 p-6 mx-1 my-8 border border-opacity-50 w-fit sm:mx-auto bg-white/50 backdrop-blur-sm rounded-2xl shadow-black/30">
+          <Image  className="relative object-cover w-full " src="/head-heart.svg" alt="caring" width={110} height={100} />
+          <div className="flex flex-col text-black">
             <span className="text-xl font-semibold">Thanks for caring</span>
             <p className="mt-2 font-thin leading-tight">
               With your deposit you are helping new and growing communities in

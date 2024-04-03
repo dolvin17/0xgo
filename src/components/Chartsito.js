@@ -19,9 +19,9 @@ function Chartsito() {
 	
 
   return (
-    <div className="flex flex-col rounded-sm shadow-lg bg-0xgo-dark col-span-full sm:col-span-6 xl:col-span-4 ">
+    <div className="flex flex-col p-1 border shadow-lg bg-white/50 backdrop-blur-sm rounded-xl col-span-full sm:col-span-6 xl:col-span-4 ">
       <div className="pt-5 pb-1">
-        <div className="mb-1 text-xs font-semibold uppercase text-slate-400 dark:text-slate-500">EXPECTED YIELD</div>
+        <div className="mb-1 font-thin text-center text-yellow-400 uppercase dark:text-slate-500">EXPECTED YIELD</div>
       </div>
       <div className="flex-grow overflow-hidden max-w-[calc(100vw-4rem)] sm:max-w-none">
         <LineChart01 data={chartData} width={530} height={150} />

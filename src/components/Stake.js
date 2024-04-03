@@ -74,9 +74,9 @@ export default function ApproveStake() {
   const isDisabled = !amount || isAproving || isStaking;
   return (
     <>
-      <label className="flex items-center pl-4 pr-2 border-2 rounded-lg border-white/30 bg-white/10">
+      <label className="flex items-center pl-4 pr-2 border-2 bg-white/50 backdrop-blur-sm rounded-xl">
         <input
-          className="flex-grow w-full py-4 font-light bg-transparent outline-none text-white/30 rounded-xl"
+          className="flex-grow w-full py-4 font-light text-black bg-transparent outline-none rounded-xl"
           placeholder="123 CTSI"
           inputMode="decimal"
           autoComplete="off"
@@ -89,7 +89,7 @@ export default function ApproveStake() {
           onChange={(e) => setAmount(e.target.value)}
         />
         <button
-          className="flex flex-row justify-center gap-2 px-5 py-1 font-semibold text-white rounded-lg bg-white/25 disabled:opacity-50"
+          className="flex flex-row justify-center gap-2 px-5 py-1 font-semibold text-black rounded-lg bg-white/25 disabled:opacity-50"
           disabled={!amount}
         >
           <Image src="/ctsi.svg" alt="arrow-right" width={24} height={24} />
