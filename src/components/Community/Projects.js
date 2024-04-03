@@ -7,9 +7,9 @@ import { FaLocationArrow } from "react-icons/fa";
 export default function Projects() {
   return (
     <>
-      <div className="flex flex-col mb-8 sm:mx-48 bg-0xgo-dark rounded-xl ">
+      <div className="flex flex-col mb-32 border border-opacity-50 sm:mx-48 bg-white/50 backdrop-blur-sm rounded-xl ">
         <div className="flex flex-col items-center justify-center flex-grow gap-8 pt-16 sm:pt-1 sm:flex-row sm:px-32">
-          <h1 className="flex-grow my-8 text-2xl text-yellow-400">
+          <h1 className="flex-grow my-8 text-3xl text-yellow-600">
             {" "}
             Approved Communities (3)
           </h1>
@@ -17,7 +17,7 @@ export default function Projects() {
             href="https://airtable.com/appTTWoz0AHF93zZb/pag843XDNt3TYVK9u/form" target="_blank"
             className="flex flex-row items-center justify-center gap-2 p-2 text-center border-2 hover:bg-black text-0xgo-blue bg-0xgo-dark border-cyan-600 rounded-xl"
           >
-            <CiSquarePlus size={30} className="text-0xgo-blue" />
+            <CiSquarePlus size={30} className="text-xl text-0xgo-blue" />
             Add new community{" "}
           </Link>
         </div>
@@ -61,7 +61,7 @@ function CommunitiesCard({
   maskURL,
 }) {
   return (
-    <article className="flex flex-col w-full max-w-[16rem] hover:scale-110 delay-75 transition-transform m-8  bg-gradient-to-br bg-300 animate-gradient   from-yellow-200 to-cyan-200 border rounded-2xl overflow-hidden border-white">
+    <article className="flex flex-col w-full max-w-[16rem] hover:scale-110 delay-75 transition-transform m-8  bg-gradient-to-br bg-300 animate-gradient   from-yellow-200 to-pink-200 border rounded-2xl overflow-hidden border-white">
       <div className="relative w-full h-[12rem] ">
         <Image
           className="object-cover w-full h-full rounded-b-none"
