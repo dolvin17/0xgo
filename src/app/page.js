@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { Chart } from "chart.js";
 import React from "react";
 import Resume from "@/components/Navigation/Resume";
@@ -11,17 +11,21 @@ import SecondState from "@/components/SecondState";
 import ThirdState from "@/components/ThirdState";
 import FourthState from "@/components/FourthState";
 import Carrusel from "../components/Carrusel";
+import Howitworks from "../components/How/Howitworks";
+import Process from "../components/How/Process";
 
 export default function Home() {
   return (
     <>
-	  <Navigation />
-	 <Stage />
-	 <Carrusel />
-	 <SecondState />
+      <Navigation />
+      <Stage />
+      <Carrusel />
+      <Howitworks />
+     <Process />
+	  {/*<SecondState />
 	 <ThirdState />
-	 <FourthState />
-	  <Footer />
+	 <FourthState />*/}
+      <Footer />
     </>
   );
 }
