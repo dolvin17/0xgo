@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Resume() {
 	  return (
-	<div className="flex items-center justify-center gap-8 py-24 sm:text-xl">
+	<div className="flex items-center justify-center gap-8 pt-32 text-black sm:text-2xl">
 		<div className="flex flex-col items-center">
 		<span className="font-bold">10,000 CTSI</span>
 		<span className="font-thin">Total Staked</span>

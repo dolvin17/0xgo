@@ -43,7 +43,7 @@ export default function Navigation() {
     <section className="fixed w-full items-center flex flex-col lg:flex-row justify-center  z-[1] ">
       <div className="!z-50  w-full items-center justify-between drop-shadow-lg backdrop-blur-lg  h-[80px] bg-white/10 px-8 flex lg:max-w-full">
         <Link className="flex-shrink-0 max-w-[5rem]" href="/">
-          <Image src="/logo.svg" alt="0xGO" width={42} height={42} />
+          <Image src="/logo.svg" alt="0xGO" width={50} height={50} />
         </Link>
 		<div className="items-center justify-end hidden lg:flex">{LINKS}</div>
 		<button 
