@@ -8,11 +8,11 @@ export default function Stage() {
         Staking 4 Good
       </h3>
       <div className="flex flex-col items-center justify-center max-w-lg mt-4 antialiased italic tracking-widest text-center shadow-color-black sm:text-2xl text-black/50 animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
-        <p className="text-xl font-thin">
+        <p className="text-3xl font-thin">
           {" "}
           Sharing is giving from what one has, not from what one has left over{" "}
         </p>
-        <p className="p-2 mt-4 not-italic text-black text-md animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
+        <p className="p-2 mt-4 text-3xl not-italic text-black text-md animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out">
           Staking protocol by running validators and operating nodes to earn
           passive rewards, and staking incentives. These rewards goes towards
           communities
