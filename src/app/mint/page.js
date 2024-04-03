@@ -4,10 +4,9 @@ import Navigation from "@/components/Navigation/Navigation";
 import cn from "clsx";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
-import Image from "next/image";
 
 const background = ["background1.png", "background2.png", "background3.png"];
-const body = ["body1.png", "body2.png", "body3.png"];
+const body = ["body1.svg", "body2.svg", "body3.svg", "body4.svg", "body5.svg", "body6.svg", "body7.svg"];
 const eyes = ["eyes1.png", "eyes2.png", "eyes3.png"];
 const mouth = ["mouth1.png", "mouth2.png", "mouth3.png"];
 
@@ -76,12 +75,13 @@ export default function Stake() {
       <Navigation />
       <div className="flex flex-col items-center pt-24 mx-auto   rounded-lg sm:mx-[200px] sm:px-16 w-fill bg-white/10">
         <div className="flex flex-col">
-          <h1 className="text-4xl font-bold text-center text-white">
+          <h1 className="text-4xl font-bold text-center bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-400 text-transparent bg-clip-text bg-300% animate-gradient">
             Cartesi Guardians
           </h1>
-          <span className="p-2 py-8 font-thin text-center text-white/50">
+          <span className="p-2 py-8 text-xl font-thin text-center text-black/50">
             {" "}
-            Allows you to get lower staking fees and increase the amount of
+            Allows you to get lower staking fees
+			<br/> + increase the amount of
             rewards earned + VIP feature access
           </span>
         </div>
@@ -98,7 +98,7 @@ export default function Stake() {
               >
                 {"<"}
               </button>
-              <h3 className="w-[100px] font-black text-black text-center ">Background</h3>
+              <h3 className="w-[100px] font-black text-black  text-xl text-center ">Background</h3>
               <div className="flex flex-row">
 			  <button
                 className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
@@ -121,7 +121,7 @@ export default function Stake() {
               >
                 {"<"}
               </button>
-			  <h3 className="w-[100px] font-black text-black text-center ">Body</h3>
+			  <h3 className="w-[100px] font-black text-black text-xl text-center ">Body</h3>
               <button
                 className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
                 onClick={() =>
@@ -140,7 +140,7 @@ export default function Stake() {
               >
                 {"<"}
               </button>
-              <h3 className="w-[100px] font-black text-black text-center ">Eyes</h3>
+              <h3 className="w-[100px] font-black text-black text-xl text-center ">Eyes</h3>
               <button
                 className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
                 onClick={() =>
@@ -159,7 +159,7 @@ export default function Stake() {
               >
                 {"<"}
               </button>
-              <h3 className="w-[100px] font-black text-black text-center ">Mouth</h3>
+              <h3 className="w-[100px] font-black text-black text-xl text-center ">Mouth</h3>
               <button
                 className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
                 onClick={() =>
