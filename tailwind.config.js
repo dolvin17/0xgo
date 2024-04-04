@@ -19,7 +19,7 @@ module.exports = {
 		sans: ['var(--font-londrina)'],
       },
 	  backgroundImage: {
-        "nouns-sea": "url('/bg_theme5.svg') ",
+        "nouns-sea": "url('/bg-theme8.png') ",
       },
       colors: {
         "0xgo": {
