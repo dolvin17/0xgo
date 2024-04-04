@@ -7,16 +7,15 @@ export default function Deposit() {
         <div className="mx-3 text-center">
           <p className="text-2xl font-bold text-center text-yellow-500 ">
             {" "}
-            Deposit
+            Deposit && Stake
           </p>
           <p className="pb-4 text-xl text-black">
             {" "}
-            allows You, to earn potential rewards.. and access to VIP features
-            like...{" "}
+            Make the deposit and staking in just one click!{" "}
           </p>
           <p className="pb-4 text-xl text-black ">
-            that gives extra incentives as ZEROToken and access to VIP features
-            like NFT Staking.
+            Forget about paying double gas fees. We have simplified the process
+            for you in a single operation.
           </p>
         </div>
         <div className="flex justify-center">

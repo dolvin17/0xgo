@@ -11,10 +11,10 @@ export default function Carrusel() {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-8 overflow-x-hidden text-gray-900 ">
-        <h1 className="text-5xl text-center antialiased font-black text-transparent bg-gradient-to-r from-yellow-400 to-cyan-400 bg-300% bg-clip-text animate-gradient tracking-[.35em] animate-fade-down animate-once animate-duration-700 animate-delay-300   ">
-		EARN YOU BADGE
+        <h1 className="text-5xl text-center antialiased font-black text-transparent bg-gradient-to-tl from-yellow-400 to-cyan-400 via-amber-500 bg-300% bg-clip-text animate-gradient tracking-[.35em]  animate-once animate-duration-700 animate-delay-300   ">
+		EARN YOUR BADGE
         </h1>
-		<Link href="/guardians" className="py-4 italic underline hover:text-orange-400 text-0xgo-blue/100 ">
+		<Link href="/guardians" className="py-4 text-xl italic underline hover:text-orange-400 text-0xgo-dark ">
 		Learn more
 		</Link>
         <div className="z-0 flex flex-row flex-wrap items-center justify-center w-full mt-8 overflow-hidden text-gray-600">

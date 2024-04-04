@@ -5,9 +5,10 @@ import cn from "clsx";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 
-const background = ["background1.png", "background2.png", "background3.png"];
+const background = ["background1.png", "background2.png", "background3.png", "background4.svg"];
 const body = ["body1.svg", "body2.svg", "body3.svg", "body4.svg", "body5.svg", "body6.svg", "body7.svg"];
 const eyes = ["eyes1.png", "eyes2.png", "eyes3.png"];
+const hat = ["hat1.png", "hat2.png"];
 const mouth = ["mouth1.png", "mouth2.png", "mouth3.png"];
 
 export default function Stake() {
@@ -15,12 +16,14 @@ export default function Stake() {
   const [selectedBody, setBody] = useState("");
   const [selectedEyes, setEyes] = useState("");
   const [selectedMouth, setMouth] = useState("");
+  const [selectedHat, setHat] = useState("");
   const [isNFTminting, setNFTminting] = useState(false);
 
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [bodyIndex, setBodyIndex] = useState(0);
   const [eyesIndex, setEyesIndex] = useState(0);
   const [mouthIndex, setMouthIndex] = useState(0);
+  const [hatIndex, setHatIndex] = useState(0);
 
   const canvasRef = useRef(null);
   useEffect(() => {
@@ -32,6 +35,7 @@ export default function Stake() {
       selectedBody &&
       selectedEyes &&
       selectedMouth &&
+	  selectedHat &&
       ctx
     ) {
       const backgroundImage = new globalThis.Image();
@@ -53,10 +57,15 @@ export default function Stake() {
           ctx.drawImage(mouthImage, 0, 0, canvas.width, canvas.height);
         };
         mouthImage.src = selectedMouth;
+		const hatImage = new globalThis.Image();
+		hatImage.onload = () => {
+		  ctx.drawImage(hatImage, 0, 0, canvas.width, canvas.height);
+		};
+		hatImage.src = selectedHat;
       };
       backgroundImage.src = selectedBackground;
     }
-  }, [selectedBackground, selectedBody, selectedEyes, selectedMouth]);
+  }, [selectedBackground, selectedBody, selectedEyes, selectedMouth, selectedHat]);
 
   const prevImage = (index, setIndex, array) => {
 	const newIndex = index === 0 ? array.length - 1 : index - 1;
@@ -169,6 +178,26 @@ export default function Stake() {
                 {">"}
               </button>
             </div>
+			<div className="flex items-center w-[420px] h-[72px] flex-grow gap-32 my-4 justify-center p-1 mx-4 border-2  border-0xgo-blue  ">
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                   setHat(prevImage(hatIndex, setHatIndex, hat))
+                }
+              >
+                {"<"}
+              </button>
+              <h3 className="w-[100px] font-black text-black text-xl text-center ">Hat</h3>
+              <button
+                className="text-3xl font-black text-transparent text-black animate-gradient bg-clip-text bg-gradient-to-br from-yellow-400 via-cyan-400 to-yellow-400"
+                onClick={() =>
+                   setHat(nextImage(hatIndex, setHatIndex, hat))
+                }
+              >
+                {">"}
+              </button>
+            </div>
+			
 
             <button
               disabled={isNFTminting}
@@ -177,7 +206,8 @@ export default function Stake() {
                 selectedBackground &&
                   selectedBody &&
                   selectedEyes &&
-                  selectedMouth
+                  selectedMouth &&
+				  selectedHat
                   ? ""
                   : "opacity-0 pointer-events-none"
               )}
@@ -191,6 +221,7 @@ export default function Stake() {
               selectedBody &&
               selectedEyes &&
               selectedMouth &&
+			  selectedHat && 
               "bg-white/50"
             }`}
           >

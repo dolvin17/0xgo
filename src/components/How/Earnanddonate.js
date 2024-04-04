@@ -11,18 +11,16 @@ export default function Earnanddonate() {
           </p>
           <p className="pb-4 text-xl text-black">
             {" "}
-            allows You, to earn potential rewards.. and access to VIP features
-            like...{" "}
+			Choose the communities, and the % you want to allocate to each one.{" "}
           </p>
           <p className="pb-4 text-xl text-black ">
-            that gives extra incentives as ZEROToken and access to VIP features
-            like NFT Staking.
+		  Earn up to 600 Reward Tokens for sending a batch tx to stake Pending pool deposits
           </p>
         </div>
         <div className="flex justify-center">
           <Image
             className="pb-4 duration-700 flex-flex-col sm:hover:skew-y-12"
-            src="/deposit.svg"
+            src="/head-heart.svg"
             alt=""
             width={150}
             height={150}

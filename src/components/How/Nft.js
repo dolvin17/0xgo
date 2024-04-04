@@ -20,7 +20,7 @@ export default function Nft() {
         <div className="flex justify-center">
           <Image
             className="pb-4 duration-700 flex-flex-col sm:hover:skew-y-12"
-            src="/nft-quetz.png"
+            src="/nfts.png"
             alt=""
             width={150}
             height={150}

@@ -39,15 +39,15 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center gap-3 mx-16 mb-8">
-        <button className="flex items-center gap-4 leading-tight text-black text-white/40">
+      <div className="flex flex-row items-center justify-center gap-3 mx-16 mb-8 backdrop-blur-sm bg-white/50 ">
+        <button className="flex items-center gap-4 text-xl leading-tight text-black text-black/40">
           {" "}
           CharmVerse
         </button>
         <Link
           href="https://twitter.com/0xgo_fund"
           target="_blank"
-          className="flex items-center gap-4 leading-tight text-black text-white/40"
+          className="flex items-center gap-4 text-xl leading-tight text-black text-black/40"
         >
           {" "}
           Twitter
@@ -55,7 +55,7 @@ export default function Footer() {
         <Link
           target="a_blank"
           href="https://t.me/+XXvIHa1l_K9mY2Fk"
-          className="flex items-center gap-4 leading-tight text-black text-white/40"
+          className="flex items-center gap-4 text-xl leading-tight text-black text-black/40"
         >
           {" "}
           Telegram
@@ -63,7 +63,7 @@ export default function Footer() {
 		<Link
           target="a_blank"
           href="https://discord.gg/Gu2CzpmXjd"
-          className="flex items-center gap-4 leading-tight text-black text-white/40"
+          className="flex items-center gap-4 text-xl leading-tight text-black text-black/40"
         >
           {" "}
           Discord
@@ -71,7 +71,7 @@ export default function Footer() {
 		<Link
           target="a_blank"
           href="https://zealy.io/cw/0xgo/leaderboard"
-          className="flex items-center gap-4 leading-tight text-black text-white/40"
+          className="flex items-center gap-4 text-xl leading-tight text-black text-black/40"
         >
           {" "}
           Zealy
