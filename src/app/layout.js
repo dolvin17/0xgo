@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
 			<Analytics />
 			<SpeedInsights />
           <RainbowKitProvider modalSize="compact" chains={chains} >
-			<div className='bg-center bg-repeat-y bg-auto bg-nouns-sea'>{children}
+			<div className='bg-center bg-repeat-y bg-nouns-sea'>{children}
 				</div></RainbowKitProvider>
         </WagmiConfig>
       </body>
