@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Brienne() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
+      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-white/50 backdrop-blur-sm">
         <ProductCards
           name="BRIENNE"
           imageURL="/nft-brienne.png"
@@ -14,8 +14,8 @@ export default function Brienne() {
             {" "}
             BRIENNE DE TARTH
           </h1>
-		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
-            <p className="text-white indent-5">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/50 rounded-xl sm:mr-16">
+            <p className="text-black indent-5">
               Brienne, {`"the Maiden of Tarth"`}, was born into a noble family
               in the Crownlands, (Game of Thrones). As a child, She trained in
               the arts of war, defying the gender expectations of her time. Her
@@ -36,8 +36,8 @@ export default function Brienne() {
               a warrior"`}
               </span>
             </p>
-            <p className="py-4 text-white indent-5">
-              <span className="font-semibold text-0xgo-blue">
+            <p className="py-4 text-black indent-5">
+              <span className="font-semibold text-pink-400">
                 {" "}
                 Cartesi Guardians
               </span>
@@ -47,7 +47,7 @@ export default function Brienne() {
                 256 limited editions.
               </span>{" "}
               These pieces are not for sale, you will only be able to own a{" "}
-              <span className="font-semibold text-0xgo-blue">
+              <span className="font-semibold text-pink-400">
                 Brienne de Tarth Cartesi Guardian{" "}
               </span>
               after staking
@@ -76,7 +76,7 @@ function ProductCards({ name, imageURL, precios }) {
           <h3 className="text-xl font-bold text-center -skew-y-3 tracking-[.25em]  antialiased  text-yellow-400 uppercase">
             {name}
           </h3>
-          <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-white -skew-y-3 ">
+          <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-black -skew-y-3 ">
             {precios}
             <Image src="/ctsi.svg" alt="0xGO" width={20} height={20} />
           </p>

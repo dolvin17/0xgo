@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Bastet() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
+      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-white/50 backdrop-blur-sm">
         <ProductCards name="BASTET" imageURL="/nft-bastet.png" precios="1000" />
         <div className="flex flex-col items-center h-[300px]">
           <h1 className="pb-8 text-4xl font-bold tracking-widest text-yellow-400">
@@ -11,7 +11,7 @@ export default function Bastet() {
             BASTET
           </h1>
 		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16 ">
-            <p className="text-white indent-5">
+            <p className="text-black indent-5">
               Bastet, the complex and multifaceted Egyptian goddess, worshiped
               by people of all social classes for thousands of years, was one of
               the most popular deities of ancient Egypt. Bastet was considered
@@ -25,8 +25,8 @@ export default function Bastet() {
               Her role as protector made her one of the most beloved and
               recognized deities of ancient Egypt.
             </p>
-            <p className="py-4 text-white indent-5">
-              <span className="font-semibold text-0xgo-blue">
+            <p className="py-4 text-black indent-5">
+              <span className="font-semibold text-pink-400">
                 {" "}
                 Cartesi Guardians
               </span>
@@ -36,7 +36,7 @@ export default function Bastet() {
                 256 limited editions.
               </span>{" "}
               These pieces are not for sale, you will only be able to own a{" "}
-              <span className="font-semibold text-0xgo-blue">
+              <span className="font-semibold text-pink-400">
                 Bastet Cartesi Guardian{" "}
               </span>
               after staking
@@ -65,7 +65,7 @@ function ProductCards({ name, imageURL, precios }) {
           <h3 className="text-xl font-bold text-center -skew-y-3 tracking-[.25em]  antialiased  text-yellow-400 uppercase">
             {name}
           </h3>
-          <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-white -skew-y-3 ">
+          <p className="flex flex-row gap-1 px-16 mb-8 font-thin text-black -skew-y-3 ">
             {precios}
             <Image src="/ctsi.svg" alt="0xGO" width={20} height={20} />
           </p>

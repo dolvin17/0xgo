@@ -5,7 +5,7 @@ import { FaDiscord } from "react-icons/fa";
 export default function EarlyMates() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-0xgo-dark">
+      <div className="flex flex-col items-center justify-center mt-4 overflow-hidden sm:flex-row rounded-xl sm:mx-48 bg-white/50 backdrop-blur-sm">
         <ProductCards
           name="Early MATE"
           imageURL="/nft-m8.png"
@@ -14,10 +14,10 @@ export default function EarlyMates() {
         <div className="flex flex-col items-center h-[300px]">
           <h1 className="pb-8 text-4xl font-bold tracking-widest text-center text-yellow-400">
             {" "}
-            WELCOME, <span className="text-0xgo-blue"> EARLY MATE</span>
+            WELCOME, <span className="text-pink-400"> EARLY MATE</span>
           </h1>
-		  <div className="p-2 mb-1 overflow-y-auto bg-white/10 rounded-xl sm:mr-16">
-            <p className="text-white indent-5">
+		  <div className="p-2 mb-1 overflow-y-auto bg-white/60 rounded-xl sm:mr-16">
+            <p className="text-black indent-5">
               In mythology and culture, unicorns have been symbols of nobility
               and greatness, the concept of a unicorn as a unique and special
               being persists and, in fact, has evolved to adapt to various
@@ -31,8 +31,8 @@ export default function EarlyMates() {
               exceptional people.
               <br />
             </p>
-            <p className="py-4 text-white indent-5">
-              <span className="font-semibold text-0xgo-blue">
+            <p className="py-4 text-black indent-5">
+              <span className="font-semibold text-pink-400">
                 {" "}
                 Cartesi Early Mate
               </span>
